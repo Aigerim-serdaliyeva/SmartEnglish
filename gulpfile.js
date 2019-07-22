@@ -31,7 +31,7 @@ gulp.task('libs-js', function () {
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
     'node_modules/owl.carousel/dist/owl.carousel.min.js',
     'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
-    'node_modules/wow.js/dist/wow.min.js'
+    'node_modules/slick-carousel/slick/slick.min.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify()) // Минимизировать весь js (на выбор)

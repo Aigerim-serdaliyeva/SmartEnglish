@@ -19,9 +19,6 @@ $(document).ready(function () {
     utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
   }
 
-  // Инициализируем анимацию (для мобильных отключен)
-  new WOW({ mobile: false }).init();
-
   if ($wnd.width() < 1592) {
     headerHeight = 109;
   }
@@ -303,7 +300,7 @@ $(".vopros__block").click(function() {
     ]
   });
   
-  
+});
 
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -354,4 +351,4 @@ function parseGET(url) {
   }
 
   return (GET);
-};
+}
