@@ -1,0 +1,195 @@
+
+
+/*==========  Desktop First  ==========*/
+
+@include media-breakpoint-down(xxl) {
+
+  .timer {
+    &-element {
+      * {
+        font-weight: bold !important;  
+      }
+    }
+    &__info {
+      font-size: 14px;
+    }
+  }
+
+}
+
+@include media-breakpoint-down(xl) {
+  
+  
+}
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+ 
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .hamburger {
+    display: block;
+  }    
+
+  .header {
+    // padding: 5px 0;
+  }
+
+  .footer {
+    text-align: center;
+
+    &__content {
+      flex-direction: column;
+
+      & > * {
+          margin: 0 0 20px 0 !important;            
+      }
+    }
+  }
+
+	.main-menu {
+    display: none;
+    background-color: #777672;
+    position: fixed;
+    top: 78px;
+    left: 0;
+    right: 0;
+    text-align: left;
+    margin-left: 0;
+    z-index: 98;
+    padding: 10px 0;
+
+		ul {
+			display: block;
+			height: auto;
+      padding: 0;
+      margin: 0;
+
+			li {
+        margin: 0 0 5px;
+
+        &:last-child {
+          margin: 0;
+        }
+			}
+		}
+  }  
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {  
+
+  .form {
+    &--horizontal {
+      .form {
+        &__content {
+          flex-direction: column;
+          max-width: 500px;
+        } 
+        
+        &__info {
+          max-width: 500px;
+        }
+      }
+
+      .input-div {
+        margin-right: 0;
+      }  
+    }
+
+    &--vertical {
+      .form__content {
+        display: block;
+        max-width: 500px;
+      }
+    } 
+    
+    &__block {
+      max-width: 500px;
+    }
+
+    &__timer {
+      max-width: 270px;
+      margin: 10px auto 0;
+      &--block {
+        display: none;
+      }
+      &--none {
+        display: flex;
+      }
+    }
+
+    .input {
+      max-width: 500px;
+    }
+
+    .input-div, .button {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+
+  .remodal {
+    padding: 30px 15px 15px;
+  }
+
+  .header {
+    .grow {
+      display: block;
+    }
+  }
+
+  .section {
+    &-title {
+      font-size: 28px;
+    }      
+  }
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  
+  .callback__wrapper {
+    display: block !important; 
+  }
+
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+  
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+  .main-menu {
+		.container {
+			width: auto;
+			padding: 0;
+		}
+  }
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
+
+@include media-breakpoint-up(xxl) {
+	
+}
+
+@include media-breakpoint-up(xxxl) {
+	
+}

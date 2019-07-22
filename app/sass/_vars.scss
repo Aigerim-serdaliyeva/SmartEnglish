@@ -1,0 +1,27 @@
+@import './fonts';
+@import './_mixins/circle';
+@import "../../node_modules/bootstrap/scss/functions.scss";
+@import "../../node_modules/bootstrap/scss/variables.scss";
+
+$default_family: Montserrat, Arial;
+$title_family: Montserrat, Arial;
+$font_size: 14px;
+$title_color: #535353;
+$text_color: #535353;
+
+$accent: #ff7080;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 16;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1360px, xxxl: 1592px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1300px, xxxl: 1532px);
+
+
+$gutter: $grid-gutter-width;
+
+@import '../../node_modules/bootstrap/scss/mixins.scss';
+@import '../../node_modules/bootstrap/scss/reboot.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../node_modules/bootstrap/scss/utilities/_spacing.scss';
+@import '../../node_modules/bootstrap/scss/utilities/_sizing.scss';
