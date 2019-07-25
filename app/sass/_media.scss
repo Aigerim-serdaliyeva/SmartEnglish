@@ -4,37 +4,314 @@
 
 @include media-breakpoint-down(xxl) {
 
-  .timer {
-    &-element {
-      * {
-        font-weight: bold !important;  
+  .footer {
+    font-size: 14px;
+    .logo {
+      max-width: 200px;
+    }
+  }
+
+  .s-gratis {
+    &--left {
+      left: -100px;
+    }
+  }
+
+  .s-quiz {
+    &--left {
+      left: -100px;
+    }
+    &__img {
+      bottom: 10px;
+    }
+  }
+
+  .s-program {
+    .program {
+      margin-bottom: 150px;
+      &--right {
+        margin: 150px 0;
+      }
+      &__content {
+        margin-right: 30px;
+        &--right {
+          margin: 0 0 0 30px;
+        }
       }
     }
-    &__info {
-      font-size: 14px;
+  }
+
+  .s-master {
+    .master {
+      margin: 0 auto 0 170px;
+      &--2 {
+        margin-top: 110px;
+      }
+      &__num {
+        font-size: 210px;
+      }
+      &__name {
+        font-size: 24px;
+      }
+      &__summary {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      &__text {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .s-format {
+
+    .tab {
+      &__content {
+        padding: 50px 40px 30px;
+      }
+    }
+
+    .format {
+      &__advantage {
+        margin-right: 20px;
+      }
+    }
+
+    .advantage {
+      &__img {
+        margin-right: 0;
+      }
     }
   }
 
 }
 
 @include media-breakpoint-down(xl) {
+
+  .header {
+    padding: 20px;
+    &__content {
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer {
+    font-size: 13px;
+    letter-spacing: -1px;
+  }
+
+  .main-menu {
+    ul {
+      li {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
   
+  .s-gratis {
+    padding: 200px 0 400px;
+    &--left {
+      left: -200px;
+    }
+  }
+
+  .s-quiz {
+    padding: 200px 0 400px;
+    &--left {
+      left: -200px;
+    }
+    &__img {
+      position: relative;
+      margin: 20px auto 0;
+      display: block;
+      text-align: center;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .s-program {
+    .program {
+      margin-bottom: 130px;
+      &--right {
+        margin: 130px 0;
+      }
+      &__title {
+        margin-bottom: 15px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+      &__content {
+        margin-right: 20px;
+        &--right {
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+  }
+
+  .s-master {
+    .master {
+      margin: 0 auto 0 100px;
+      &--2 {
+        margin-top: 120px;
+      }
+    }
+  }
+
+  .s-student {
+    .student {
+      padding: 25px 20px;
+      max-width: 980px;
+      &__img {
+        margin-right: 20px;
+        max-width: 320px;
+      }
+      &__comment {
+        right: 30px;
+        bottom: 25px;
+      }
+    }
+  }
+
+  .s-secret {
+    .secret {
+      padding-left: 45px;
+      &__num {
+        font-size: 28px;
+      }
+      &__content {
+        padding: 10px 15px;
+        min-height: 300px;
+      }
+      &__title, &__img {
+        margin-bottom: 20px;
+      }
+      &__text {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .s-format {
+
+    &__block {
+      margin-bottom: 50px;
+      &__title {
+        font-size: 16px;
+      }
+    }
+
+    .format {
+      &__title {
+        font-size: 14px;
+      }
+      &__header {
+        margin-bottom: 20px;
+        img {
+          height: 110px;
+        }
+      }
+      &__video {
+        .video__label {
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .advantage {
+      margin-bottom: 20px;
+      &__img {
+        max-width: 120px;
+      }
+    }
+
+    .video {
+      max-width: 350px;
+      &__label {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .s-tarif {
+    .tarif {
+      padding: 25px 15px;
+    }
+  }
   
 }
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
  
+  .footer {
+    font-size: 14px;
+    letter-spacing: 0;
+    .logo {
+      max-width: none;
+    }
+    &__content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .s {
+    &-quiz {
+      &--left {
+        display: none;
+      }
+    }
+
+    &-student {
+      .student {
+        max-width: 750px;
+        display: block;
+        padding: 25px;
+        &__img {
+          max-width: none;
+        }
+      }
+    }
+
+    &-format {
+      .advantage {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
   .hamburger {
     display: block;
-  }    
+  }   
+  
+  .owl-carousel {
+    .owl {
+      &-nav {
+        text-align: center;
+      }
+      &-prev, &-next {
+        position: relative;
+      }
+    }
+  }
 
   .header {
-    // padding: 5px 0;
+    padding: 10px 0;
+    &__content {
+      margin-bottom: 0;
+    }
   }
 
   .footer {
@@ -51,7 +328,9 @@
 
 	.main-menu {
     display: none;
-    background-color: #777672;
+    background-color: #fff;
+    border-bottom: 1px solid $accent;
+    max-width: none;
     position: fixed;
     top: 78px;
     left: 0;
@@ -77,12 +356,150 @@
 		}
   }  
 
+  .s {
+    &-gratis {
+      &--left {
+        display: none;
+      }
+    }
+
+    &-program {
+      .program {
+        margin-bottom: 40px;
+        &--right {
+          margin: 0 0 40px;
+        }
+        &__ielts {
+          display: flex;
+          
+        }
+      }
+    }
+
+    &-master {
+      .master {
+        margin: 0 auto 0 20px;
+        &__num {
+          top: -15%;
+          &--2 {
+            left: 0;
+            top: 0;
+          }
+        }
+        &__text {
+          &::before {
+            left: -20px;
+          }
+        }
+      }
+    }
+
+    &-student {
+      &__text {
+        font-size: 16px;
+        margin-bottom: 60px;
+      }
+      &__title {
+        font-size: 22px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      &__about {
+        font-size: 20px;
+      }
+      &__content {
+        max-width: 500px;
+        margin-bottom: 80px;
+      }
+      &__block {
+        img {
+          max-width: 150px;
+        }
+      }
+      &__result {
+        font-size: 18px;
+      }
+      .carousel-student {
+        .owl {
+          &-item {
+            padding: 30px;
+          }
+        }
+      }
+      .student {
+      }
+    }
+
+    &-format {
+      &__title {
+        margin-bottom: 50px;
+        font-size: 20px;
+      }
+      &__block {
+        margin-bottom: 40px;
+        &__title {
+          font-size: 14px;
+        }
+      }
+      &__num {
+        margin-right: 15px;
+        font-size: 24px;
+      }
+      .tab {
+        &__content {
+          flex-direction: column;
+        }
+      }
+      .format {
+        max-width: 410px;
+        width: 100%;
+        margin: 0 auto 25px;
+        &__header {
+          margin-bottom: 10px;
+          img {
+            height: 90px;
+          }
+        }
+        &__advantage{
+          margin: 0 0 25px;
+          &__title {
+            text-align: center;
+          }
+        }  
+        &__video {
+          display: block;
+          .video {
+            margin-bottom: 30px;
+            &__label {
+              margin-top: 20px;
+            }
+          }
+        }      
+      }
+      
+      .video {
+        margin: 0 auto;
+      }
+    }
+
+    &-tarif {
+      .tarif {
+        margin: 0 auto 30px;
+      }
+    }
+  }
+
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {  
 
   .form {
+
+    &__title {
+      font-size: 14px;
+    }
+
     &--horizontal {
       .form {
         &__content {
@@ -106,6 +523,23 @@
         max-width: 500px;
       }
     } 
+
+    &--flex {
+      .form {
+        &__content {
+          display: block;
+        }
+        &__block {
+          max-width: 500px;
+        }
+        &__info {
+          .info {
+            max-width: 500px;
+            text-align: center;
+          }
+        }
+      }
+    }
     
     &__block {
       max-width: 500px;
@@ -144,8 +578,71 @@
 
   .section {
     &-title {
-      font-size: 28px;
+      font-size: 24px;
     }      
+  }
+
+  .s {
+
+    &-gratis {
+      padding: 150px 0 50px;
+      &__title {
+        font-size: 26px;
+        margin-bottom: 30px;
+      }
+      &__text {
+        font-size: 18px;
+      }
+    }
+
+    &-student {
+      .student {
+        &__img {
+          max-width: 250px;
+          margin: 0 auto 10px;
+        }
+        &__comment {
+          position: relative;
+          right: 0;
+          bottom: 0;
+          margin-top: 15px;
+          img {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+
+    &-format {
+      &__block {
+        margin-bottom: 20px;
+      }
+      .tab {
+        &__content {
+          flex-direction: column;
+          padding: 25px 15px;
+        }
+        &__links {
+          display: block;
+        }
+      }
+      .format {
+        &__advantage {          
+          &__title {
+            font-size: 16px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .advantage {
+        &__title {
+          font-size: 13px;
+        }
+        &__img {
+          max-width: 90px;
+        }
+      }
+    }
   }
 }
 
@@ -154,6 +651,175 @@
   
   .callback__wrapper {
     display: block !important; 
+  }
+
+  .footer {
+    &__content {
+      padding: 15px 0 80px;
+    }
+  }
+
+  .start {
+    font-size: 14px;
+    text-align: center;
+    &__title {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+    &__content {
+      padding-left: 0;
+      text-align: center;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .s {
+
+    &-gratis {
+      &--right {
+        display: none;
+      }
+    }
+
+    &-quiz {
+      &--right {
+        display: none;
+      }
+      &__block {
+        display: block;
+        margin-bottom: 50px;
+      }
+      &__text {
+        font-size: 18px;
+      }
+      &__title {
+        font-size: 23px;
+        margin-bottom: 70px;
+      }
+      &__question {
+        margin: 0 auto;
+        &::before {
+          left: -95px;
+          display: none;
+        }
+        &__title {
+          margin-bottom: 20px;
+        }
+      }
+      .quiz {
+        &__img {
+          margin: 0 auto 40px;
+        }
+        &__title {
+          margin-bottom: 40px;
+        }
+      }
+    }
+
+    &-master {
+      .master {
+        &__num {
+          font-size: 180px;
+        }
+        &__icons {
+          margin-bottom: 35px;
+        }
+        &__text {
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &-about {
+      .about {
+        padding: 20px 25px 10px;
+        &__title {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &-kurs {
+      .kurs {
+        margin: 0 auto 30px;
+        &__block {
+          min-height: 110px;
+        }
+        &__title {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &-student {
+      &__block {
+        img {
+          max-width: 110px;
+          margin-right: 10px;
+        }
+      }
+      &__about {
+        font-size: 14px;
+      }
+
+      .carousel-student {
+        .owl-item {
+          padding: 20px 15px;
+        }
+      }
+
+      .student {
+        padding: 20px 10px;
+        &__name {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        &__uroven, &__srok {
+          font-size: 14px;
+        }
+        &__learn, &__ball {
+          font-size: 14px;
+        }
+        &__learn--italic {
+          font-size: 18px;
+        }
+        &__ball--max {
+          font-size: 18px;
+        }
+        &__comment {
+          font-size: 14px;
+          img {
+            max-width: 220px;
+          }
+          &__title {
+            max-width: 160px;
+          }
+        }
+      }
+    }
+
+    &-secret {
+      .secret {
+        padding-left: 40px;
+        &__content {
+          min-height: auto;
+          padding: 25px 15px;
+        }
+        &__num {
+          font-size: 24px;
+        }
+        &__title {
+          font-size: 16px;
+        }
+        &__text {
+          font-size: 14px;
+        }
+      }
+    }
   }
 
 }
@@ -178,6 +844,26 @@
 			width: auto;
 			padding: 0;
 		}
+  }
+
+  .s-program {
+    .program--right {
+      margin: 180px 0;
+      flex-direction: row-reverse;
+      .program {
+        &__content {  
+          text-align: left;
+          margin: 0 0 0 50px;
+        }
+  
+        &__num {
+          background-image: url("../img/program-ellipse-right.png");  
+          .num {
+            left: 45%;
+          }      
+        }
+      }
+    }
   }
 }
 

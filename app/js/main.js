@@ -6,7 +6,7 @@ $(document).ready(function () {
   var $html = $("html, body");
   var $header = $(".header");
   var $menu = $(".main-menu");
-  var headerHeight = 189;
+  var headerHeight = 160;
   var $hamburger = $(".hamburger");
 
   // забираем utm из адресной строки и пишем в sessionStorage, чтобы отправить их на сервер при form submit
@@ -20,7 +20,7 @@ $(document).ready(function () {
   }
 
   if ($wnd.width() < 1592) {
-    headerHeight = 109;
+    headerHeight = 84;
   }
 
   // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
@@ -245,18 +245,20 @@ $(document).on('closing', '.question-modal', function (e) {
 });
 
 $(".vopros__block").click(function() {
-  $(this).closest('.vopros').find('.vopros__text').toggleClass('d-none');
+  $(this).closest('.vopros').toggleClass('active');
 });
 
 
   $(".carousel-student").owlCarousel({
     loop: false,
+    dots: false, 
+    nav: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false},
-      576: { items: 1, mouseDrag: true, dots: false, nav: true},
+      0: { items: 1, mouseDrag: false, },
+      576: { items: 1, mouseDrag: true, },
     },
   });
 
@@ -275,6 +277,42 @@ $(".vopros__block").click(function() {
     },
   });
 
+  $('.command').click(function() {
+    var $this = $(this);
+    var $owlItem = $this.closest('.owl-item');
+    var commandId = $this.data('id');
+    $owlItem.siblings().removeClass('current');
+    $owlItem.addClass('current');
+    $('.s-command .command__content').hide().filter('[data-target=' + commandId + ']').show();
+  });
+
+
+  $('.carousel-command').slick({
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    draggable: false,
+    centerPadding: '0px',
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+          }      
+        },
+        {
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 2,
+          }      
+        }
+    ]
+  });
+
+  
   $('.carousel-review').slick({
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
@@ -285,20 +323,21 @@ $(".vopros__block").click(function() {
     draggable: false,
     centerPadding: '0px',
     responsive: [
-       {
+        {
           breakpoint: 992,
           settings: {
             slidesToShow: 3,
           }      
-       },
-       {
+        },
+        {
           breakpoint: 768,
           settings: {
-             slidesToShow: 1,
+              slidesToShow: 1,
           }      
-       }
+        }
     ]
   });
+
   
 });
 

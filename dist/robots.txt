@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /*.js
+Allow: /*.css
+Allow: /*.jpg
+Allow: /*.gif
+Allow: /*.png
+Allow: /js/*.js
+Allow: /img/*.jpg
+Allow: /img/*.png
+Host: http://.kz

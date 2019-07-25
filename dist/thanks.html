@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Проводим интернет в офисы</title>
+  <meta name="description" content="Проводим интернет в офисы">
+  <meta name="keywords" content="Проводим интернет в офисы">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon.ico?v=11" type="image/x-icon">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body id="main-page">
+
+  <div class="page-wrapper">
+
+    <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+    <div class="callback__wrapper">
+      <div class="callback__items">
+        <div class="callback__item">
+          <a target="_parent" href="https://api.whatsapp.com/send?phone=77774889998" id="whatsapp">
+            <i class="callback__icon callback__whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <div class="callback__item">
+          <a href="tel:+77774889998" id="callMe" class="call-me">
+            <i class="callback__icon callback__phone"></i>  Позвонить
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header class="header inverse">
+      <div class="container">
+        <div class="header__content">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+            <h3 class="header__title">
+              Проводим интернет в офисы
+            </h3>
+          </a>
+          
+          <div class="grow"></div>
+
+          <nav class="main-menu">
+            <div class="container">
+              <ul>                
+                <li>
+                  <a class="link" href="#service">Услуги</a>
+                </li>
+                <li>
+                  <a class="link" href="#object">Наши объекты</a>
+                </li>
+                <li>
+                  <a class="link" href="#contact">Контакты</a>
+                </li>
+                <li class="last">
+                  <a class="link" href="#calculate">Рассчитать тариф</a>
+                </li>
+                <li class="d-lg-none">
+                  <a href="tel:+77774889998" class="text-phone" id="phone_number">+7 (777) 488 99 98</a>
+                </li>
+                <li class="d-lg-none">
+                  <a href="tel:+77273903310" class="text-phone" id="phone_number">+7 (727) 390 33 10</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="header__phone">
+            <a href="tel:+77774889998" class="text-phone" id="phone_number">+7 (777) 488 99 98</a> <br>
+            <a href="tel:+77273903310" class="text-phone" id="phone_number">+7 (727) 390 33 10</a>
+          </div>
+
+          <div class="header__button">
+            <img src="./img/customer-service.png" alt="">
+            <a href="#" class="button button---img" data-remodal-target="zvonok-modal">Обратный звонок</a>
+          </div>          
+
+          <button class="hamburger hamburger--elastic hamburger--accessible">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+        
+      </div>
+    </header>
+
+    <section class="s-thanks">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 offset-lg-1">
+            <div class="s-thanks__title">Спасибо!</div>
+            <div class="s-thanks__text">Ваша заявка успешно принята. <br>
+                В ближайшее время мы свяжемся с Вами!</div>
+            <a href="/" class="s-thanks__link">Вернуться на главную</a>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  
+  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+
+    <div class="form form--vertical">
+      <form action="/mail.php" method="post">
+        <div class="form__content">
+          <input type="hidden" name="info" value="Обратный звонок">
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Имя">
+          </div>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
+
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="remodal remodal--small" data-remodal-id="calculate" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+
+    <div class="form ">
+      <form action="/mail.php" method="post">
+        <div class="form__content">
+          <input type="hidden" name="info" value="Рассчитать  стоимость">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Имя">
+          </div>                     
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>                    
+          <button class="button ajax-submit" type="submit" id="zakazat_zvonok"> Рассчитать  стоимость </button>        
+        </div>
+      </form>
+    </div>    
+  </div>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
