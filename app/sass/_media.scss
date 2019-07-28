@@ -112,7 +112,7 @@
   }
   
   .s-gratis {
-    padding: 200px 0 400px;
+    padding-top: 200px;
     &--left {
       left: -200px;
     }
@@ -493,6 +493,14 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {  
+  .circle, .circle-small {
+    display: none;
+  }
+
+  .section {
+    background: none;
+    margin-top: 0;
+  }
 
   .form {
 
@@ -877,5 +885,10 @@
 }
 
 @include media-breakpoint-up(xxxl) {
-	
+}
+
+@media (min-width: 1920px) {
+  .section {
+    // background-size: 100% auto;
+  }
 }
