@@ -5941,6 +5941,27 @@ h1, h2, h3, h4, h5, h6 {
 .video__pause:before {
   margin-right: 6px; }
 
+.image-layer {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 0; }
+  .image-layer:after {
+    content: "";
+    display: block;
+    width: 403px;
+    height: 379px;
+    background-image: url("../img/image-layer.png"); }
+  .image-layer--command::after {
+    width: 295px;
+    height: 282px;
+    background-image: url("../img/command-layer.png"); }
+  .image-layer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+
 .section {
   padding: 100px 0;
   -webkit-background-size: auto auto;

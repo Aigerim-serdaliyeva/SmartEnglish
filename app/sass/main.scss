@@ -366,6 +366,40 @@
   }
 }
 
+.image-layer {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  &:after {
+    content: "";
+    display: block;
+    // position: relative;
+    width: 403px;
+    height: 379px;
+    background-image: url('../img/image-layer.png');
+    // z-index: 1;
+  }
+
+  &--command {
+    &::after {
+      width: 295px;
+      height: 282px;
+      background-image: url('../img/command-layer.png');
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    // min-width: 100%;
+    // min-height: 100%;
+  }
+}
+
 .section {
   padding: 100px 0;
   background-size: auto;
