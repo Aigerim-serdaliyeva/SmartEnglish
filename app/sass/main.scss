@@ -434,7 +434,8 @@
 
 .s-gratis {
   padding: 245px 0 520px;
-  background-image: url("../img/grafits-back-bottom.png");
+  // background-image: url("../img/grafits-back-bottom.png");
+  background-image: url("../img/grafits-back-bottom2.png");
   background-position: bottom center;
   position: relative;
   z-index: 0;
@@ -492,7 +493,7 @@
   background-image: url("../img/program-back.png");
   background-size: auto;
   background-position: top center;
-  padding-top: 60px;
+  padding-top: 0;
   padding-bottom: 0;
 
   .button {
@@ -559,7 +560,7 @@
   background-image: url('../img/master-back-top.png'), url('../img/master-back-bottom.png');
   background-position: top center, bottom center;
   padding: 402px 0 380px;
-  margin-top: -50px;
+  margin-top: -80px;
   
   .section-title {
     margin-bottom: 120px;
@@ -644,7 +645,8 @@
 }
 
 .s-about {
-  margin-top: -200px;
+  // margin-top: -200px;
+  padding: 50px 0;
   .about {
     max-width: 361px;
     width: 100%;
@@ -818,6 +820,7 @@
     position: absolute;
     right: 0;
     bottom: 80px;
+    cursor: pointer;
   }
 
   &__text {
@@ -955,6 +958,7 @@
   padding: 490px 0 355px;
   background-image: url("../img/student-back.png");
   margin: -360px 0 0;
+  z-index: 0;
 
   &__text {
     font-size: 19px;
@@ -998,6 +1002,7 @@
     font-weight: 900;
     text-align: center;
     margin-top: 20px;
+    color: #d2b0d4;
   }
 
   .owl-carousel {
@@ -1017,6 +1022,15 @@
     padding: 40px 50px 30px;
     display: flex;
     position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 154px;
+      height: 127px;
+      background-image: url("../img/fly.png");
+      left: -125px;
+      bottom: 30px;
+    }
 
     &__comment {
       font-size: 17px;
@@ -1093,6 +1107,8 @@
 
 .s-secret {
   background-image: url("../img/secret-back.png");
+  margin-top: -270px;
+  padding: 300px 0 320px;
 
   .carousel-secret {
     .owl {
@@ -1271,6 +1287,8 @@
 
 .s-tarif {
   background-image: url("../img/tarif-back.png");
+  padding: 0 0 100px;
+  margin-top: -150px;
 
   .tab {
     &__links {
@@ -1647,7 +1665,7 @@
   background-image: url("../img/vopros-back.png");
   background-position: center bottom;
   background-size: auto;
-  z-index: 98;
+  z-index: 90;
 
   .vopros {
     margin-bottom: 50px;
@@ -1735,6 +1753,7 @@
 }
 
 .s-format {
+  padding: 0 0 100px 0;
 
   &__text {
     font-size: 26px;
@@ -1939,6 +1958,16 @@
     text-decoration: underline;
     font-weight: 500;
     color: $accent;
+  }
+}
+
+
+.program-form {
+  max-width: 750px;
+  border-radius: 32px;
+  padding: 0;
+  .form {
+    margin: 0 auto;
   }
 }
 

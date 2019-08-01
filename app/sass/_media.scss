@@ -22,7 +22,11 @@
       left: -100px;
     }
     &__img {
-      bottom: 10px;
+      width: 620px;
+      bottom: 70px;
+      right: -20px;
+      // bottom: -90px;
+      // right: -80px;
     }
   }
 
@@ -81,6 +85,14 @@
     .advantage {
       &__img {
         margin-right: 0;
+      }
+    }
+  }
+
+  .s-student {
+    .student {
+      &::before {
+        display: none;
       }
     }
   }
