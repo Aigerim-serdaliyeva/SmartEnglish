@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=1" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=12" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -69,7 +69,7 @@
                 <a class="link" href="#quiz">Онлайн-курс по подготовке к IELTS</a>
               </li>
               <li>
-                <a class="link" href="#program">Программа</a>
+                <a class="link" href="#secret">Программа</a>
               </li>
               <li>
                 <a class="link" href="#tarif">Тарифы</a>
@@ -195,8 +195,8 @@
         <div class="owl-carousel carousel-student">
           <div class="student">
             <div class="student__img">
-              <div class="image-layer">
-                <img src="./img/student.jpg" alt="">
+              <div class="image-layer" style="background-image: url('./img/student.jpg')">
+                <img src="./img/image-layer.png" alt="">
               </div>
             </div>
             <div class="student__content">
@@ -225,7 +225,11 @@
                   <div class="student__ball student__ball--max">8.0</div>
                 </div>
               </div>
-              <div class="student__ielts"><img src="./img/ielts-1.jpg" alt=""></div>
+              <div class="student__ielts">
+                <a href="./img/ielts-big-1.jpg" class="ielts" data-fancybox="ieltsGallery">
+                  <img src="./img/ielts-1.jpg" alt="">
+                </a>
+              </div>  
               <div class="student__comment">
                 <img src="./img/student-comment-figure.png" alt="">
                 <div class="student__comment__title">“Готовился к 
@@ -235,8 +239,8 @@
           </div>
           <div class="student">
             <div class="student__img">
-              <div class="image-layer">
-                <img src="./img/student.jpg" alt="">
+              <div class="image-layer" style="background-image: url('./img/student.jpg')">
+                <img src="./img/image-layer.png" alt="">
               </div>
             </div>
             <div class="student__content">
@@ -265,7 +269,11 @@
                   <div class="student__ball student__ball--max">8.0</div>
                 </div>
               </div>
-              <div class="student__ielts"><img src="./img/WhatsApp.jpg" alt=""></div>
+              <div class="student__ielts">
+                <a href="./img/ielts-big-1.jpg" class="ielts" data-fancybox="ieltsGallery">
+                  <img src="./img/ielts-1.jpg" alt="">
+                </a>
+              </div>              
               <div class="student__comment">
                 <img src="./img/student-comment-figure.png" alt="">
                 <div class="student__comment__title">“IELTS нужен был для учебы в Пражском университете”</div>
@@ -279,7 +287,7 @@
       </div>
     </section>
 
-    <section class="section s-secret inverse">
+    <section class="section s-secret inverse" id="secret">
       <div class="container">
         <h2 class="section-title section-title--min">В чем же состоит секрет столь эффективного обучения?</h2>
         <div class="s-secret__title">Программа от экзаменаторов!</div>
@@ -509,12 +517,8 @@
               <div class="video">
                 <div class="format__advantage__title">Посмотри видео-обзор
                     нашей онлайн-платформы!</div>
-                <div class="video__label stopped small">
-                  <video poster="./img/format-video.jpg">
-                    <source src="http://www.sovastudio.kz/videos/alihan-mustaev.mp4" type="video/mp4">
-                  </video>
-                  <div class="video__play"></div>
-                  <div class="video__pause"></div>
+                <div class="video__label small">
+                  <iframe height="281" src="https://www.youtube.com/embed/Gdma5UiMaEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -554,12 +558,8 @@
                       преподавателем</span> в формате беседы
                       на английском  </div>
                   
-                  <div class="video__label stopped small">
-                  <video poster="./img/format-video-1.jpg">
-                    <source src="https://www.youtube.com/watch?v=CdXYr_1v4R4" type="video/mp4">
-                  </video>
-                  <div class="video__play"></div>
-                  <div class="video__pause"></div>
+                  <div class="video__label small">
+                    <iframe height="281" src="https://www.youtube.com/embed/Gdma5UiMaEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 </div>
                 <div class="video">
@@ -567,12 +567,8 @@
                       Ютуб-трансляции</span> с разбором уроков и заданий,
                       на которых ты можешь задать все вопросы
                       преподавателю напрямую</div>
-                  <div class="video__label stopped small">
-                    <video poster="./img/format-video-2.jpg">
-                      <source src="https://www.youtube.com/watch?v=CdXYr_1v4R4" type="video/mp4">
-                    </video>
-                    <div class="video__play"></div>
-                    <div class="video__pause"></div>
+                  <div class="video__label small">
+                    <iframe height="281" src="https://www.youtube.com/embed/Gdma5UiMaEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -586,25 +582,16 @@
       <div class="container">
         <h2 class="section-title section-title--middle">Дарим в подарок к курсу множество бонусов</h2>
         
-        <!-- <div class="row">
-          <div class="col-xl-3">
-            <div class="s-podarok__kurs">
-              <div class="s-podarok__title">Мини-курс для тех, чей уровень владения английским языком
-                  ниже уровня <span>Intermediate.</span></div>
-              <div class="s-podarok__urok"><span>2-х недельный</span> блок
-                  <span>7 уроков</span> по 1 часу</div>
-            </div>
-          </div>
-        </div> -->
         <div class="row justify-content-center">
-          <div class="s-podarok__kurs">
-            <div class="s-podarok__title">Мини-курс для тех, чей уровень владения английским языком
-                ниже уровня <span>Intermediate.</span></div>
-            <div class="s-podarok__urok"><span>2-х недельный</span> блок <br>
-                <span>7 уроков</span> по 1 часу</div>
-          </div>
-          <div class="col-xl-4 col-lg-5 col-md-6">
+          <div class="col-xl-4 col-lg-5 col-md-6 d-flex">
             <div class="podarok">
+              <div class="s-podarok__kurs">
+                <!-- <img src="./img/triangle.png" class="podarok__arrow"> -->
+                <div class="s-podarok__title">Мини-курс для тех, чей уровень владения английским языком
+                    ниже уровня <span>Intermediate.</span></div>
+                <div class="s-podarok__urok"><span>2-х недельный</span> блок <br>
+                    <span>7 уроков</span> по 1 часу</div>
+              </div>
               <div class="podarok__img"><img src="./img/podarok-1.png" alt=""></div>
               <div class="podarok__price__block">
                 <div class="podarok__price__none">20 000 тг.</div>
@@ -612,8 +599,14 @@
               </div>              
             </div>
           </div>
-          <div class="col-xl-4 col-lg-5 col-md-6">
+          <div class="col-xl-4 col-lg-5 col-md-6 d-flex">
             <div class="podarok">
+              <div class="s-podarok__kurs">
+                <div class="s-podarok__title">Мини-курс для тех, чей уровень владения английским языком
+                    ниже уровня <span>Intermediate.</span></div>
+                <div class="s-podarok__urok"><span>2-х недельный</span> блок <br>
+                    <span>7 уроков</span> по 1 часу</div>
+              </div>
               <div class="podarok__img"><img src="./img/podarok-2.png" alt=""></div>
               <div class="podarok__price__block">
                 <div class="podarok__price__none">40 000 тг.</div>
@@ -621,8 +614,14 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-5 col-md-6">
+          <div class="col-xl-4 col-lg-5 col-md-6 d-flex">
             <div class="podarok">
+              <div class="s-podarok__kurs">
+                <div class="s-podarok__title">Мини-курс для тех, чей уровень владения английским языком
+                    ниже уровня <span>Intermediate.</span></div>
+                <div class="s-podarok__urok"><span>2-х недельный</span> блок <br>
+                    <span>7 уроков</span> по 1 часу</div>
+              </div>
               <div class="podarok__img"><img src="./img/podarok-3.png" alt=""></div>
               <div class="podarok__price__block">
                 <div class="podarok__price__none">20 000 тг.</div>
@@ -630,9 +629,15 @@
               </div>
             </div>
           </div>
-          <div class="d-nono d-xl-block w-100"></div>
-          <div class="col-xl-4 col-lg-5 col-md-6">
+          <div class="d-none d-xl-block w-100"></div>
+          <div class="col-xl-4 col-lg-5 col-md-6 d-flex">
             <div class="podarok">
+              <div class="s-podarok__kurs">
+                <div class="s-podarok__title">Мини-курс для тех, чей уровень владения английским языком
+                    ниже уровня <span>Intermediate.</span></div>
+                <div class="s-podarok__urok"><span>2-х недельный</span> блок <br>
+                    <span>7 уроков</span> по 1 часу</div>
+              </div>
               <div class="podarok__img"><img src="./img/podarok-4.png" alt=""></div>
               <div class="podarok__price__block">
                 <div class="podarok__price__none">20 000 тг.</div>
@@ -640,8 +645,14 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-5 col-md-6">
+          <div class="col-xl-4 col-lg-5 col-md-6 d-flex">
             <div class="podarok">
+              <div class="s-podarok__kurs">
+                <div class="s-podarok__title">Мини-курс для тех, чей уровень владения английским языком
+                    ниже уровня <span>Intermediate.</span></div>
+                <div class="s-podarok__urok"><span>2-х недельный</span> блок <br>
+                    <span>7 уроков</span> по 1 часу</div>
+              </div>
               <div class="podarok__img"><img src="./img/podarok-5.png" alt=""></div>
               <div class="podarok__price__block">
                 <div class="podarok__price__none">40 000 тг.</div>
@@ -649,8 +660,14 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-5 col-md-6">
+          <div class="col-xl-4 col-lg-5 col-md-6 d-flex">
             <div class="podarok">
+              <div class="s-podarok__kurs">
+                <div class="s-podarok__title">Мини-курс для тех, чей уровень владения английским языком
+                    ниже уровня <span>Intermediate.</span></div>
+                <div class="s-podarok__urok"><span>2-х недельный</span> блок <br>
+                    <span>7 уроков</span> по 1 часу</div>
+              </div>
               <div class="podarok__img"><img src="./img/podarok-6.png" alt=""></div>
               <div class="podarok__price__block">
                 <div class="podarok__price__none">20 000 тг.</div>
@@ -734,8 +751,8 @@
                   <div class="select__title">Выбранный
                       тариф: </div>
                   <div class="select__standart">Базовый</div>
-                  <div class="price__none">159 000 тг.</div>
-                  <div class="price">79 990 тг.</div>
+                  <div class="price__none">79 990 тг.</div>
+                  <div class="price">39 990 тг.</div>
                 </div>
                 <div class="select__main">
                   <div class="select__title">К нему идут бонусЫ:</div>
@@ -769,8 +786,8 @@
                 </div>
                 <div class="select__form">
                   <div class="select__title">Все это ты получаешь за:</div>
-                  <div class="price__none">240 000 тг.</div>
-                  <div class="price">79 990 тг.</div>
+                  <div class="price__none">79 990 тг.</div>
+                  <div class="price">39 990 тг.</div>
                   <div class="timer__title">Цена повыситься через:</div>
                   <div class="timer">
                     <script src="//megatimer.ru/get/c05646a6efe46923549baa69519828c8.js"></script>
@@ -838,8 +855,8 @@
                   <div class="select__title">Выбранный
                       тариф: </div>
                   <div class="select__standart">Vip</div>
-                  <div class="price__none">159 000 тг.</div>
-                  <div class="price">79 990 тг.</div>
+                  <div class="price__none">279 000 тг.</div>
+                  <div class="price">139 990 тг.</div>
                 </div>
                 <div class="select__main">
                   <div class="select__title">К нему идут бонусЫ:</div>
@@ -873,8 +890,8 @@
                 </div>
                 <div class="select__form">
                   <div class="select__title">Все это ты получаешь за:</div>
-                  <div class="price__none">240 000 тг.</div>
-                  <div class="price">79 990 тг.</div>
+                  <div class="price__none">279 000 тг.</div>
+                  <div class="price">139 990 тг.</div>
                   <div class="timer__title">Цена повыситься через:</div>
                   <div class="timer">
                     <script src="//megatimer.ru/get/c05646a6efe46923549baa69519828c8.js"></script>
@@ -906,42 +923,26 @@
         <h2 class="section-title section-title--middle">отзывы наших учеников</h2>
         <div class="carousel-review">
           <div class="slick-item">
-            <div class="video__label stopped">
-              <video poster="./img/review-1.jpg">
-                <source src="http://www.sovastudio.kz/videos/alihan-mustaev.mp4" type="video/mp4">
-              </video>
-              <div class="video__play"></div>
-              <div class="video__pause"></div>
+            <div class="video__label">
+              <iframe height="281" src="https://www.youtube.com/embed/Gdma5UiMaEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
 
           <div class="slick-item">
-            <div class="video__label stopped active">
-              <video poster="./img/review-2.jpg">
-                <source src="http://www.sovastudio.kz/videos/alihan-mustaev.mp4" type="video/mp4">
-              </video>
-              <div class="video__play"></div>
-              <div class="video__pause"></div>
+            <div class="video__label">
+              <iframe height="281" src="https://www.youtube.com/embed/Gdma5UiMaEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
 
           <div class="slick-item">
-            <div class="video__label stopped">
-              <video poster="./img/review-3.jpg">
-                <source src="http://www.sovastudio.kz/videos/alihan-mustaev.mp4" type="video/mp4">
-              </video>
-              <div class="video__play"></div>
-              <div class="video__pause"></div>
+            <div class="video__label">
+              <iframe height="281" src="https://www.youtube.com/embed/Gdma5UiMaEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
 
           <div class="slick-item">
-            <div class="video__label stopped">
-              <video poster="./img/review-3.jpg">
-                <source src="http://www.sovastudio.kz/videos/alihan-mustaev.mp4" type="video/mp4">
-              </video>
-              <div class="video__play"></div>
-              <div class="video__pause"></div>
+            <div class="video__label">
+              <iframe height="281" src="https://www.youtube.com/embed/Gdma5UiMaEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
   
@@ -949,7 +950,7 @@
       </div>
     </section>
 
-    <section class="section s-about">
+    <section class="section s-about s-about--2">
       <div class="container">
         <h2 class="section-title">Немного о <span>Smart English</span></h2>
         <div class="row justify-content-center">
@@ -994,76 +995,140 @@
 
     <section class="section s-command">
       <div class="container">
-        <h2 class="section-title section-title--middle">Команда, благодаря которой
+        <h2 class="section-title section-title--middle">Команда, благодаря которой <br>
             все это работает</h2>
         <div class="carousel-command">
           <div class="slick-item">
             <div class="command" data-id="command-1">
-              <div class="image-layer image-layer--command">
-                <img src="./img/command-1.jpg" alt="">
-              </div>
+              <img src="./img/Константин.png" alt="Константин">
             </div>
           </div> 
           <div class="slick-item">
             <div class="command" data-id="command-2">
-              <div class="image-layer image-layer--command">
-                <img src="./img/command-2.jpg" alt="">
-              </div>
+              <img src="./img/Ляззат.png" alt="Ляззат">
             </div>
           </div> 
           <div class="slick-item">
             <div class="command" data-id="command-3">
-              <div class="image-layer image-layer--command">
-                <img src="./img/command-3.jpg" alt="">
-              </div>
+              <img src="./img/Зак.png" alt="Заф">
             </div>
           </div> 
           <div class="slick-item">
             <div class="command" data-id="command-4">
-              <div class="image-layer image-layer--command">
-                <img src="./img/command-2.jpg" alt="">
-              </div>
+              <img src="./img/Анатолий.png" alt="Анатолий">
             </div>
-          </div> 
-        </div>
-        <div class="command__content" style="display: none" data-target="command-1">
-          <div class="command__img__big"><img src="./img/Константин-mini.jpeg" alt=""></div>
-          <div class="command__block">
-            <div class="command__name"></div>
-            <div class="command__summary"></div>
-            <div class="command__text"></div>
-            <div class="command__text"></div>
           </div>
+          <div class="slick-item">
+            <div class="command" data-id="command-5">
+              <img src="./img/Оксана.png" alt="Оксана">
+            </div>
+          </div>
+          <div class="slick-item">            
+            <div class="command" data-id="command-6">
+              <img src="./img/Екатерина.png" alt="Екатерина">
+            </div>
+          </div>                     
         </div>
-        <div class="command__content" data-target="command-2">
-          <div class="command__img__big"><img src="./img/Константин-big.jpeg" alt=""></div>
+        <div class="command__content" data-target="command-1">
+          <div class="command__image">
+            <img src="./img/Константин-2.png" alt="Константин">
+          </div>
           <div class="command__block">
             <div class="command__name">Константин Авдеенко</div>
             <div class="command__summary">Основатель Smart English</div>
-            <div class="command__text">Мы живем в мире постоянно ускоряющегося прогресса. В современном мире постепенно стираются все рамки и границы.  </div>
-            <div class="command__text">Ты можешь общаться с миллионами людей из всех стран мира по интернету. Самолет меньше, чем за 24 часа готов доставить тебя в любую точку нашей прекрасной планеты. Ты можешь переехать жить в ту страну, которой тебе захочется.</div>
-            <div class="command__text">А для того, чтобы научиться чему-то не нужны годы и отсиживание на традиционных скучных лекциях. Ты свободно может обучиться чему угодно не выходя из дома.</div>
-            <div class="command__text">Идея Smart English как раз в том, чтобы помочь тебе как можно эффективнее получить сертификат IELTS, так необходимый для достижения.. <a href="#">читать далее</a> </div>
+            <div class="command__text">
+              <p>Мы живем в мире постоянно ускоряющегося прогресса. В современном мире постепенно стираются все рамки и границы.  </p>
+              <p>Ты можешь общаться с миллионами людей из всех стран мира по интернету. Самолет меньше, чем за 24 часа готов доставить тебя в любую точку нашей прекрасной планеты. Ты можешь переехать жить в ту страну, которой тебе захочется.</p>
+              <p>А для того, чтобы научиться чему-то не нужны годы и отсиживание на традиционных скучных лекциях. Ты свободно может обучиться чему угодно не выходя из дома.</p>
+              <p>Идея Smart English как раз в том, чтобы помочь тебе как можно эффективнее получить сертификат IELTS, так необходимый для достижения.. </p>
+            </div>
+            <a href="#" class="more"></a>
+          </div>
+        </div>
+        <div class="command__content" style="display: none" data-target="command-2">
+          <div class="command__image">
+            <img src="./img/Ляззат-2.png" alt="Ляззат">
+          </div>
+          <div class="command__block">
+            <div class="command__name">Ляззат Толенова</div>
+            <div class="command__summary">Эксперт школы : «Smart English»</div>
+            <div class="command__text">
+              <p>Работала с компаниями: «English Language Academy»; Казахстан Тержолы; Дом Министерств; </p>
+              <p>Практика в Назарбаев Интеллектуальной Школе </p>
+              <p>6 лет работы с американцами и британцами в: НИШ IB; Astana Forum; Astana EXPO 2017; </p>
+              <p>Личный переводчик представителя посольства Британии в 2015 году   </p>             
+            </div>
+            <a href="#" class="more"></a>
           </div>
         </div>
         <div class="command__content" style="display: none" data-target="command-3">
-          <div class="command__img__big"><img src="./img/command-2-big.png" alt=""></div>
+          <div class="command__image">
+            <img src="./img/Зак-2.png" alt="Зак">
+          </div>
           <div class="command__block">
-            <div class="command__name"></div>
-            <div class="command__summary"></div>
-            <div class="command__text"></div>
-            <div class="command__text"></div>
+            <div class="command__name">Ник Зак</div>
+            <div class="command__summary">Эксперт школы : «Smart English»</div>
+            <div class="command__text">
+              <p>Работала с компаниями: «English Language Academy»; Казахстан Тержолы; Дом Министерств; </p>
+              <p>Практика в Назарбаев Интеллектуальной Школе </p>
+              <p>6 лет работы с американцами и британцами в: НИШ IB; Astana Forum; Astana EXPO 2017; </p>
+              <p>Личный переводчик представителя посольства Британии в 2015 году   </p>             
+            </div>
+            <a href="#" class="more"></a>
           </div>
         </div>
         <div class="command__content" style="display: none" data-target="command-4">
-          <div class="command__img__big"><img src="./img/command-2-big.png" alt=""></div>
+          <div class="command__image">
+            <img src="./img/Анатолий-2.png" alt="Анатолий">
+          </div>
           <div class="command__block">
-            <div class="command__name"></div>
-            <div class="command__summary"></div>
-            <div class="command__text"></div>
-            <div class="command__text"></div>
+            <div class="command__name">Анатолий</div>
+            <div class="command__summary">Анатолий выполняет обязанности IT специалиста</div>
+            <div class="command__text">                 
+              <p>Контролирует технический процесс обучения</p>
+              <p>Помогает ученикам решать технические проблемы связанные с образовательной платформой</p>
+              <p>Whstsapp онлайн поддержка.</p>
+              <p>Веб разработчик.</p>
+              <p>Модератор при проведении вебинара можно так указать просто</p>                
+            </div>
+            <a href="#" class="more"></a>
           </div>
         </div>
+        <div class="command__content" style="display: none" data-target="command-5">
+          <div class="command__image">
+            <img src="./img/Оксана-2.png" alt="Оксана">
+          </div>
+          <div class="command__block">
+            <div class="command__name">Оксана</div>
+            <div class="command__summary">Лингвист, преподаватель иностранных языков</div>
+            <div class="command__text">
+              <p>Окончила Марийский государственный университет, факультет Международных отношений</p>
+              <p>Опыт переводов 10 лет</p>
+              <p>Сдавала BULATS на С1</p>
+              <p>Переводила для Внешнеэкономического форума в 2016 и 2017, компании ODLO (Швейцария), Stevia  </p>              
+            </div>
+            <a href="#" class="more"></a>
+          </div>
+        </div>
+        <div class="command__content" style="display: none" data-target="command-6">
+          <div class="command__image">
+            <img src="./img/Екатерина-2.png" alt="Екатерина">
+          </div>
+          <div class="command__block">
+            <div class="command__name">Екатерина</div>
+            <div class="command__summary"></div>
+            <div class="command__text">
+                <p>Закончила РУДН факультет иностранных языков 2004 году</p>
+                <p>2005- 2007 г.г.Училась грамматике и разгов.речи в США у американки, носителя языка в течении 2 лет, жила там в штате Мэрилэнд Фредерик, возле Вашингтона. </p>
+                <p>При переезде в Турцию сдала межд.экзамен Bulats , бизнес английский,  с итоговым урлвнем С1.( компьютерный вариант онлайн 4 часа подряд)</p>
+                <p>Учит турецких детей разговорной речи в Турции, грамматике со Стамбула, </p>
+                <p>Русскоязычных из России обучает онлайн</p>
+                <p>Использую британское произношение </p>
+                <p>Владеет свободно русским, марийским, английским, турецким В2.    </p>                
+            </div>
+            <a href="#" class="more"></a>
+          </div>
+        </div>        
       </div>
     </section>
 
@@ -1072,7 +1137,7 @@
         <h2 class="section-title section-title--middle">Часто задаваемые вопросы</h2>
         <div class="row justify-content-center">
           <div class="col-xl-6 col-lg-8">
-            <div class="vopros">
+            <div class="vopros active">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
                 <div class="vopros__title">Как долго длится курс?</div>
@@ -1085,8 +1150,7 @@
                 <div class="vopros__title">Что если я живу не в Казахстане? </div>
               </div>              
               <div class="vopros__text">Не имеет значения, где
-вы живете. Если у вас есть доступ в интернет, вы без проблем сможете
-заниматься.</div>
+                вы живете. Если у вас есть доступ в интернет, вы без проблем сможете заниматься.</div>
             </div>
             <div class="vopros">
               <div class="vopros__block">
@@ -1094,8 +1158,8 @@
                 <div class="vopros__title">Какое техническое оснащение требуется для курса?</div>
               </div>              
               <div class="vopros__text">Вам понадобится только
-хорошее интернет-соединение. Заниматься можно как с компьютера, так и с
-современных мобильных устройств.</div>
+              хорошее интернет-соединение. Заниматься можно как с компьютера, так и с
+              современных мобильных устройств.</div>
             </div>
             <div class="vopros">
               <div class="vopros__block">
@@ -1103,90 +1167,94 @@
                 <div class="vopros__title">Существует ли рассрочка на оплату курса?</div>
               </div>              
               <div class="vopros__text">Рассрочка существует, но
-это сделает обучение дороже. О вариантах рассрочки подробнее вам расскажет
-методист во время консультации.</div>
+                это сделает обучение дороже. О вариантах рассрочки подробнее вам расскажет
+                методист во время консультации.</div>
             </div>
-		<div class="vopros">
+		        <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
                 <div class="vopros__title">Что делать, если вдруг не получается оплатить через сайт?</div>
               </div>              
               <div class="vopros__text">Вы можете написать
-сообщение в отдел продаж через Whatsapp: +7(747)233-30-92 или позвонить в отдел
-продаж по номеру +7(747)233-30-92</div>
-          </div>
-		<div class="vopros">
+                  сообщение в отдел продаж через Whatsapp: +7(747)233-30-92 или позвонить в отдел
+                  продаж по номеру +7(747)233-30-92</div>
+            </div>
+            <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
                 <div class="vopros__title">Будут ли скидки, если я захочу продолжить учиться?</div>
               </div>              
               <div class="vopros__text">Всем нашим студентам,
-кто продолжает учиться у нас после первого курса, мы предоставляем лояльные
-условия на продолжение обучения, а также крутые бонусы.</div>
-		</div>
-		<div class="vopros">
+                кто продолжает учиться у нас после первого курса, мы предоставляем лояльные
+                условия на продолжение обучения, а также крутые бонусы.</div>
+            </div>
+            <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
                 <div class="vopros__title">Насколько курс интенсивный?</div>
               </div>              
               <div class="vopros__text">Курс разработан
-специально для сдачи IELTS на высокий балл. Мы прекрасно понимаем, сколько
-времени занятой человек может выделять на обучение без отрыва от работы и
-семьи. Методики, использованные в нашем онлайн-курсе, позволяют не чувствовать
-интенсивность происходящего и получать удовольствие от процесса, при этом
-обеспечивают неожиданно быстрый результат. Тем не менее, для тех, кто хочет
-больше, мы даем еще больше материала для запоминания и отработки.</div>
+                специально для сдачи IELTS на высокий балл. Мы прекрасно понимаем, сколько
+                времени занятой человек может выделять на обучение без отрыва от работы и
+                семьи. Методики, использованные в нашем онлайн-курсе, позволяют не чувствовать
+                интенсивность происходящего и получать удовольствие от процесса, при этом
+                обеспечивают неожиданно быстрый результат. Тем не менее, для тех, кто хочет
+                больше, мы даем еще больше материала для запоминания и отработки.</div>
+            </div>
           </div>
-          <div class="vopros">
+          <div class="col-xl-6 col-lg-8"> 
+            <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
                 <div class="vopros__title">Какой минимальный уровень владения языком нужен для подготовки к экзамену в нашей школе?</div>
               </div>              
               <div class="vopros__text">Pre-Intermediate</div>
             </div>
-                <div class="vopros">
+            <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
                 <div class="vopros__title">Выдаете ли вы сертификат по окончании
-обучения?</div>
+                  обучения?</div>
               </div>              
               <div class="vopros__text">Сертификат в электронном
-виде приходит вам на почту по окончании курса.</div>  
-		</div>    
-		<div class="vopros">
+                  виде приходит вам на почту по окончании курса.</div>  
+            </div>    
+            <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
                 <div class="vopros__title">Какой у меня будет график занятий?</div>
               </div>              
               <div class="vopros__text">В неделю Вам открывается
-2 урока - т.е за одну неделю вы изучаете теорию и делаете практику по двум
-урокам, более подробно об этом вам расскажет методист.</div>
+                2 урока - т.е за одну неделю вы изучаете теорию и делаете практику по двум
+                урокам, более подробно об этом вам расскажет методист.</div>
             </div>
-		<div class="vopros">
+            <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
                 <div class="vopros__title">Как забронировать стоимость и место?</div>
               </div>              
               <div class="vopros__text">Шаг 1. Выбираете курс https://pay.smarteng.me/, нажимаете кнопку «Заказать», вводите свои данные. <br><br> Шаг 2. Оплачиваете любым
-удобным способом. <br><br> Шаг 3. После этого с
-вами связывается методист.</div>
+              удобным способом. <br><br> Шаг 3. После этого с
+              вами связывается методист.</div>
             </div>
-<div class="vopros">
+            <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
-                <div class="vopros__title">Есть ли скидки корпоративным клиентам?</div>              
+                <div class="vopros__title">Есть ли скидки корпоративным клиентам?</div>  
+              </div>            
               <div class="vopros__text">Если вы хотите, чтобы не
-только вы, но и ваши сотрудники и коллеги говорили на английском, вы можете
-обсудить индивидуальные условия для корпоративных клиентов с вашим методистом
-во время консультации.</div>
-		</div>
-		<div class="vopros">
+              только вы, но и ваши сотрудники и коллеги говорили на английском, вы можете
+              обсудить индивидуальные условия для корпоративных клиентов с вашим методистом
+              во время консультации.</div>
+            </div>
+            <div class="vopros">
               <div class="vopros__block">
                 <div class="vopros__img"><img class="plus" src="./img/plus.png" alt=""><img class="minus" src="./img/minus.png" alt=""></div>
-                <div class="vopros__title">Какие гарантии Вы предоставляете?</div>              
+                <div class="vopros__title">Какие гарантии Вы предоставляете?</div>   
+              </div>           
               <div class="vopros__text">Гарантия возврата
-средств если по прохождению курса у вас не увеличился уровень хотя бы на 1 бал,
-при условии что все задания были выполнены.</div>
+              средств если по прохождению курса у вас не увеличился уровень хотя бы на 1 бал,
+              при условии что все задания были выполнены.</div>
             </div>
           </div>
         </div>
@@ -1224,7 +1292,9 @@
     </section>
 
     <section class="s-contact" id="contact">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5eeebf8bde1d8186d93c65ccdc6dde11ad80e3a0c84e2d5c2514ebc6090de8b2&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5eeebf8bde1d8186d93c65ccdc6dde11ad80e3a0c84e2d5c2514ebc6090de8b2&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>      
     </section>
 
     <footer class="footer">

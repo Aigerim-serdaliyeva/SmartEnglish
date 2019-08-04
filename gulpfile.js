@@ -19,7 +19,7 @@ gulp.task('main-js', function () {
     'app/js/main.js',
   ])
     .pipe(concat('main.min.js'))
-    .pipe(uglify()) // Минифицирует js
+    // .pipe(uglify()) // Минифицирует js
     .pipe(gulp.dest('app/js'))
     .pipe(browserSync.reload({ stream: true }));
 });

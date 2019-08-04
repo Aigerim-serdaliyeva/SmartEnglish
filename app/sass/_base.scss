@@ -25,6 +25,12 @@ img, video {
   display: block;
 }
 
+iframe {
+  max-width: 100%;
+  width: 100%;
+  // height: auto !important;
+}
+
 video {
   object-fit: cover;
 }
@@ -609,6 +615,12 @@ h1, h2, h3, h4, h5, h6 {
       background-image: url('../img/arrow-right.png') !important;
     }
   }
+
+  &-slide {
+    img {
+      margin: 0 auto;
+    }
+  }
 }
 
 .remodal {
@@ -800,6 +812,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
+    background-color: transparent;
   }
 
   .button {

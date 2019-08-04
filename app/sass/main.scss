@@ -368,35 +368,47 @@
 
 .image-layer {
   display: inline-block;
+  // background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
-  overflow: hidden;
-  z-index: 0;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+  }
+
+  &:before {
+    width: 2px;
+    height: 100%;
+    right: -1px;
+    top: 0;
+  }
 
   &:after {
-    content: "";
-    display: block;
-    // position: relative;
-    width: 403px;
-    height: 379px;
-    background-image: url('../img/image-layer.png');
-    // z-index: 1;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -1px;
   }
 
-  &--command {
-    &::after {
-      width: 295px;
-      height: 282px;
-      background-image: url('../img/command-layer.png');
-    }
-  }
+  // &--command {
+  //   &::after {
+  //     width: 295px;
+  //     height: 282px;
+  //     background-image: url('../img/command-layer.png');
+  //   }
+  // }
+
+  // &--commandbig {
+  //   &:after {
+  //     width: 408px;
+  //     height: 361px;
+  //     background-image: url("../img/img-layer-command.png");
+  //   }
+  // }
 
   img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    // min-width: 100%;
-    // min-height: 100%;
   }
 }
 
@@ -679,8 +691,14 @@
 }
 
 .s-about {
-  // margin-top: -200px;
   padding: 50px 0;
+  margin-top: -250px;
+  &--2 {
+    background-image: url("../img/about-back-bottom.png");
+    background-position: bottom center;
+    padding: 50px 0 420px;
+    margin-top: 0;
+  }
   .about {
     max-width: 361px;
     width: 100%;
@@ -831,10 +849,10 @@
 
 .s-quiz {  
   padding: 290px 0 550px;
-  background-image: url("../img/gratis-back.png");
+  background-image: url("../img/grafits-back-bottom2.png");
+  background-position: bottom center;
   position: relative;
   z-index: 0;
-  position: relative;
 
   &--left {
     position: absolute;
@@ -945,6 +963,7 @@
   background-position: 100% 150px;
   background-size: auto;
   padding: 70px 0;
+  z-index: 1;
 
   .kurs {
     box-shadow: 0px 0px 57px 0px rgba(0, 0, 0, 0.13);
@@ -1225,7 +1244,7 @@
 }
 
 .s-podarok {
-  padding: 390px 0 410px;
+  padding: 500px 0 420px;
   background-image: url("../img/podarok-back.png");
   
   .row {
@@ -1243,9 +1262,20 @@
     box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.15);
     padding: 35px 30px;
     border-radius: 25px;
+    display: none;
     position: absolute;
-    left: 0;
-    top: -10%;
+    left: -60%;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 42px;
+      background-image: url("../img/triangle.png");
+      right: 1px;
+      bottom: 25%;
+      transform: translateX(100%);
+    }
   }
 
   &__title {
@@ -1264,13 +1294,24 @@
   }
 
   .podarok {
-    // max-width: 210px;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 90px;
+    position: relative;
+    &:hover {
+      .s-podarok__kurs {
+        display: block;
+      }
+    }
     
     &__img {
       text-align: center;
       position: relative;
+      flex-grow: 1;
+
       &::before, &::after {
         content: "";
         position: absolute;
@@ -1298,6 +1339,7 @@
 
       &__block {
         max-width: 140px;
+        width: 100%;
         margin: 0 auto;
       }
 
@@ -1322,7 +1364,7 @@
 .s-tarif {
   background-image: url("../img/tarif-back.png");
   padding: 0 0 100px;
-  margin-top: -150px;
+  margin-top: -180px;
 
   .tab {
     &__links {
@@ -1562,6 +1604,9 @@
 }
 
 .s-review {
+  background-image: url('../img/review-back-top.png');
+  background-position: top center;
+  padding: 450px 0 100px;
 
   .slick {
     &-track {
@@ -1616,6 +1661,7 @@
 }
 
 .s-command {
+  margin-top: -300px;
 
   .carousel-command {
     max-width: 1310px;
@@ -1624,7 +1670,7 @@
 
   .slick {
     &-list {
-      margin: 0 100px;
+      margin: 0 60px;
     }
     &-track {
       padding: 20px 0 ;
@@ -1686,10 +1732,30 @@
 
     &__text {
       font-size: 16px;
-      margin-bottom: 20px;
-      a {
+      max-height: 250px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      &.full {
+        max-height: none;
+        & + .more {
+          &:before {
+            content: "свернуть";
+          }
+        }
+      }
+      p {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      & + .more {
         font-weight: 500;
         color: $accent;
+        &:before {
+          content: "читать далее";
+          display: inline;
+        }
       }
     }
   }
@@ -1787,7 +1853,7 @@
 }
 
 .s-format {
-  padding: 0 0 100px 0;
+  padding: 0 0 0 0;
 
   &__text {
     font-size: 26px;
@@ -1822,12 +1888,29 @@
     &__links {
       max-width: 1450px;
       margin: 0 auto;
+      padding-left: 60px;
       display: flex;
       justify-content: space-between;
     }
 
     &__link {
+      position: relative;
+      &::before {
+        display: none;
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 134px;
+        height: 48px; 
+        background-image: url('../img/triangle-top.png');
+        background-size: cover;
+        filter: drop-shadow(0 -23px 20px rgba(0,0,0,0.11));
+      }
       &.active {
+        &::before {
+          display: block;
+        }
         .s-format {
           &__num {
             color: $accent;
@@ -1970,28 +2053,38 @@
 }
 
 .s-thanks {
-  padding: 200px 0 100px 0;
+  padding: 270px 0 100px 0;
   background-image: url("../img/main-back.jpg");
   flex-grow: 1;
     
   &__title {
     color: $accent;
-    font-size: 48px;
-    font-weight: bold;
-    font-family: Oswald, serif;
-    margin-bottom: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 70px;
   }
 
   &__text {
-    font-size: 24px;
-    margin: 0 0 125px;
-    color: #fff;
+    font-size: 17px;
+    margin: 0 0 25px;
+    span {
+      font-weight: bold;
+      color: $accent;
+    }
   }
 
-  &__link {
-    text-decoration: underline;
-    font-weight: 500;
-    color: $accent;
+  .button {
+    position: relative;
+    margin-top: 40px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 84px;
+      height: 30px;
+      background-image: url("../img/aircraft.png");
+      right: -63px;
+    }
   }
 }
 

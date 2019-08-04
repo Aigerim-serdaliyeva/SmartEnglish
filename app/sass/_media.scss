@@ -135,15 +135,6 @@
     &--left {
       left: -200px;
     }
-    &__img {
-      position: relative;
-      margin: 20px auto 0;
-      display: block;
-      text-align: center;
-      img {
-        margin: 0 auto;
-      }
-    }
   }
 
   .s-program {
@@ -251,7 +242,12 @@
     }
   }
 
+  .s-podarok {
+    padding: 330px 0 440px;
+  }
+
   .s-tarif {
+    margin-top: -150px;
     .tarif {
       padding: 25px 15px;
     }
@@ -276,27 +272,83 @@
 
   .s {
     &-quiz {
+      padding: 200px 0 50px;
+      background-image: none;
       &--left {
         display: none;
+      }
+      &__img {
+        position: relative;
+        display: block;
+        margin: 50px auto 0;
+        width: auto;
+        bottom: auto;
+        right: auto;
+        img {
+          margin: 0 auto;
+        }
       }
     }
 
     &-student {
+      background-image: none;
+      padding: 50px 0;
+      margin-top: 0;
       .student {
         max-width: 750px;
         display: block;
         padding: 25px;
         &__img {
           max-width: none;
+          margin-right: 0;
+          text-align: center;
+          .image-layer {
+            width: auto;
+          }
         }
       }
     }
 
+    &-secret {
+      padding: 100px 0;
+      margin-top: 0;
+    }
+
     &-format {
+      padding: 50px 0;
+      background-image: none;
       .advantage {
         width: 100%;
         margin-bottom: 10px;
       }
+    }
+
+    &-podarok {
+      background-image: none;
+      padding: 50px 0;
+    }
+
+    &-tarif {
+      margin-top: 0;
+
+      .select {
+        padding: 30px 15px;
+      }
+    }
+
+    &-command {
+      .command {
+        &__content {
+          padding: 25px 20px;
+        }
+        &__block {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    &-thanks {      
+      padding-top: 200px;
     }
   }
 
@@ -317,6 +369,27 @@
         position: relative;
       }
     }
+  }
+
+  .slick {
+    &-arrow {
+      top: auto;
+      bottom: 0;
+      transform: none;
+    }
+    &-prev {
+      left: calc(50% - 50px);
+    }
+    &-next {
+      right: calc(50% - 50px);
+    }
+    &-slider {
+      padding-bottom: 60px;
+    }
+  }
+
+  .question-modal {
+    max-width: 750px;
   }
 
   .header {
@@ -366,9 +439,18 @@
         }
 			}
 		}
-  }  
+  } 
+  
+  .section {
+    padding: 50px 0;
+  }
 
   .s {
+
+    &-quiz {
+      
+    }
+
     &-gratis {
       &--left {
         display: none;
@@ -378,25 +460,32 @@
     &-program {
       .program {
         margin-bottom: 40px;
+        flex-direction: row-reverse;
+        &__content {
+          text-align: left;
+          margin: 0 0 0 20px;
+        }
         &--right {
           margin: 0 0 40px;
         }
         &__ielts {
-          display: flex;
-          
+          display: flex;          
         }
+      }
+      .button {
+        margin: 20px auto 50px;
       }
     }
 
     &-master {
+      background-image: none;
+      .section-title {
+        margin-bottom: 80px;
+      }
       .master {
         margin: 0 auto 0 20px;
         &__num {
-          top: -15%;
-          &--2 {
-            left: 0;
-            top: 0;
-          }
+          display: none;
         }
         &__text {
           &::before {
@@ -404,6 +493,10 @@
           }
         }
       }
+    }
+
+    &-about {
+      margin-top: 0;
     }
 
     &-student {
@@ -495,10 +588,113 @@
     }
 
     &-tarif {
+      padding: 50px 0;
       .tarif {
         margin: 0 auto 30px;
+        padding: 20px 10px;
+        &__title {
+          margin-bottom: 25px;
+        }
+        &__text {
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .select {
+        display: block;
+        &__title {
+          margin-bottom: 15px;
+        }
+        &__aside {
+          max-width: none;
+          text-align: center;
+          margin-bottom: 25px;
+        }
+        &__main {
+          max-width: none;
+          margin-bottom: 25px;
+        }
+        &__form {
+          max-width: none;
+          text-align: center;
+          .timer {
+            margin: 0 auto 20px;
+          }
+          .button {
+            display: block;
+          }
+        }
+      }
+
+      .garant {
+        margin: 70px auto 0;
+        &::before {
+          display: none;
+        }
+        &__title {
+          margin-bottom: 20px;
+        }
+        &__text {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
       }
     }
+
+    &-review {
+      .video__label {
+        transform: none !important;
+      }
+      .slick-track {
+        padding: 0;
+      }
+    }
+
+    &-command {
+      .slick {
+        &-list {
+          margin: 0;;
+        }
+        &-track {
+          padding: 0;
+        }
+      }
+      .carousel-command {
+        margin-bottom: 20px;
+      }
+      .command {
+        transform: none !important;
+        &__content {
+          display: block;
+          text-align: center;
+          .image-layer {
+            text-align: center;
+          }
+        }
+        &__block {
+          text-align: left;
+          margin-left: 0;
+        }
+        &__name {
+          font-size: 18px;
+        }
+        &__summary {
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+        &__text {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
   }
 
 }
@@ -509,9 +705,59 @@
     display: none;
   }
 
+  .main-menu {
+    ul {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .question-modal {
+    .question {
+      &__text {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+      &__thanks {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .line {
+        &__red, &__grey {
+          width: 50px;
+        }
+      }
+
+      .label {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+    .form {
+      .input {
+        max-width: 500px;
+      }
+      &__block {
+        margin: 0 auto;
+        .button {
+          max-width: 500px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
   .section {
-    background: none;
     margin-top: 0;
+    &-title {
+      font-size: 24px;
+      margin-bottom: 50px;
+      text-align: center;
+    } 
   }
 
   .form {
@@ -596,13 +842,11 @@
     }
   }
 
-  .section {
-    &-title {
-      font-size: 24px;
-    }      
-  }
-
   .s {
+
+    &-quiz {
+      padding-top: 150px;
+    }
 
     &-gratis {
       padding: 150px 0 50px;
@@ -616,6 +860,7 @@
     }
 
     &-student {
+      
       .student {
         &__img {
           max-width: 250px;
@@ -633,6 +878,43 @@
       }
     }
 
+    &-secret {
+      &__title {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+      &__text {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 60px;
+      }
+    }
+    
+    &-podarok {
+      .section-title {
+        margin-bottom: 50px;
+      }
+      &__kurs {
+        left: 0;
+        padding: 15px;
+        max-width: 200px;
+      }
+      .podarok {
+        margin: 0 auto 50px;
+        &__img {
+          margin: 0 auto 0 -15px;
+          &::before, &::after {
+            display: none;
+          }
+        }
+        &__price {
+          &__block {
+            max-width: 160px;
+          }
+        }
+      }
+    }
+
     &-format {
       &__block {
         margin-bottom: 20px;
@@ -644,6 +926,14 @@
         }
         &__links {
           display: block;
+          padding-left: 0;
+        }
+        &__link {
+          &.active {
+            &::before {
+              display: none;
+            }
+          }          
         }
       }
       .format {
@@ -663,14 +953,61 @@
         }
       }
     }
+
+    &-vopros {
+      background-image: none;
+      .vopros {
+        margin-bottom: 30px;
+        &__block {
+          margin-bottom: 10px;
+        }
+        &__title {
+          font-size: 16px;
+        }
+        &__img {
+          width: 50px;
+        }
+        &__text {
+          font-size: 14px;
+          margin-left: 65px;
+        }
+      }
+      .s-form__title {
+        font-size: 18px;
+      }
+      .form {
+        margin: 0 auto;
+      }
+    }
+
+    &-contact {
+      margin-top: 0;
+      .map {
+        & > ymaps {
+          height: 300px !important;
+        }
+      }
+    }
+
+    &-thanks {
+      padding: 150px 20px 120px;
+    }
   }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+
+  .page-top {
+    bottom: 80px;
+  }
   
   .callback__wrapper {
     display: block !important; 
+  }
+
+  .main-menu {
+    top: 68px;
   }
 
   .footer {
@@ -696,6 +1033,15 @@
   }
 
   .s {
+
+    &-program {
+      .program {
+        &__num {
+          background-image: none;
+          width: 40px;
+        }
+      }
+    }
 
     &-gratis {
       &--right {
@@ -744,7 +1090,7 @@
           font-size: 180px;
         }
         &__icons {
-          margin-bottom: 35px;
+          margin-bottom: 25px;
         }
         &__text {
           font-size: 14px;
@@ -840,6 +1186,45 @@
         }
       }
     }
+
+    &-tarif {
+      .select {
+        padding: 20px 5px;
+        &__title {
+          font-size: 16px;
+        }
+        &__aside {
+          max-width: none;
+          text-align: center;
+          margin-bottom: 25px;
+        }
+        &__main {
+          max-width: none;
+          margin-bottom: 25px;
+        }
+        &__content {
+          padding: 15px 10px;
+        }
+        &__bonus {
+          &__title {
+            font-size: 14px;
+            max-width: 150px;
+          }
+          .price {
+            font-size: 14px;
+            &__none {
+              font-size: 13px;
+            }
+          }
+        }
+        &__form {
+          .timer {
+            margin: 0 auto 10px;
+          }
+        }
+      }      
+    }
+
   }
 
 }

@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
   var $wnd = $(window);
-  var $top = $(".page-top");
-  var $top = $(".top");
+  var $top = $(".page-top, .top");
   var $html = $("html, body");
   var $header = $(".header");
   var $menu = $(".main-menu");
@@ -181,6 +180,15 @@ $(document).ready(function () {
     $tab.find(".tab__content").removeClass("active").filter("[data-tab=" + id + "]").addClass("active");
   });
 
+  $tabContents = $(".s-tarif .tab__contents");
+  $(".s-tarif .tab__link").click(function() {
+    if ($wnd.width() < 992) {
+      var tabContentsTop = $tabContents.offset().top - $header.height() - 25;
+      console.log('tabContentsTop', tabContentsTop);
+      $html.stop().animate({ scrollTop: tabContentsTop }, 'slow', 'swing');
+    }
+  });
+
   var $questionModal = $(".question-modal");
 $(".perehod").click(function(e) {
   e.preventDefault();
@@ -248,6 +256,11 @@ $(".vopros__block").click(function() {
   $(this).closest('.vopros').toggleClass('active');
 });
 
+$('.more').click(function (e) {
+  e.preventDefault();
+  $(this).prev('.command__text').toggleClass('full');
+})
+
 
   $(".carousel-student").owlCarousel({
     loop: false,
@@ -298,21 +311,20 @@ $(".vopros__block").click(function() {
     centerPadding: '0px',
     responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3,
           }      
         },
         {
-          breakpoint: 768,
+          breakpoint: 992,
           settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
           }      
         }
     ]
   });
 
-  
   $('.carousel-review').slick({
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
@@ -324,21 +336,19 @@ $(".vopros__block").click(function() {
     centerPadding: '0px',
     responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3,
           }      
         },
         {
-          breakpoint: 768,
+          breakpoint: 992,
           settings: {
               slidesToShow: 1,
           }      
         }
     ]
-  });
-
-  
+  });  
 });
 
 function validateEmail(email) {
