@@ -175,9 +175,26 @@
         margin-right: 20px;
         max-width: 320px;
       }
+      &__ielts {
+        margin: 15px 0 0 20px;
+      }
       &__comment {
-        right: 30px;
-        bottom: 25px;
+        position: relative;
+        margin-top: 25px;
+        bottom: 0;
+        right: 0;
+        // right: 30px;
+        // bottom: 25px;
+        img {
+          max-width: 220px;
+        }
+        &__title {
+          font-size: 14px;
+          left: 50%;
+          top: 35%;
+          transform: translateX(-48%);
+          font-weight: bold;
+        }
       }
     }
   }
@@ -447,8 +464,24 @@
 
   .s {
 
-    &-quiz {
-      
+    &-pdf {
+      padding: 100px 0 50px;
+      .pdf {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        &__title {
+          font-size: 20px;
+          margin-bottom: 40px;
+        }
+        ul {
+          li {
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
 
     &-gratis {
@@ -954,6 +987,15 @@
       }
     }
 
+    &-program {
+      background-image: url("../img/figure-back.png");
+      // background-size: contain;
+      background-position: bottom right;
+      // background-position: calc(100% -100px) bottom;
+      // background-image: url("../img/tarif-back.png");
+      // background-position: center calc(bottom - 300px) ;
+    }
+
     &-vopros {
       background-image: none;
       .vopros {
@@ -1045,13 +1087,13 @@
 
     &-gratis {
       &--right {
-        display: none;
+        // display: none;
       }
     }
 
     &-quiz {
       &--right {
-        display: none;
+        // display: none;
       }
       &__block {
         display: block;
@@ -1139,7 +1181,7 @@
       }
 
       .student {
-        padding: 20px 10px;
+        padding: 20px 10px 10px;
         &__name {
           font-size: 18px;
           margin-bottom: 15px;
@@ -1151,18 +1193,20 @@
           font-size: 14px;
         }
         &__learn--italic {
-          font-size: 18px;
+          font-size: 14px;
         }
         &__ball--max {
-          font-size: 18px;
+          font-size: 16px;
         }
         &__comment {
           font-size: 14px;
           img {
-            max-width: 220px;
+            max-width: 180px;
           }
           &__title {
-            max-width: 160px;
+            width: 150px;
+            top: 25%;
+            left: 52%;
           }
         }
       }

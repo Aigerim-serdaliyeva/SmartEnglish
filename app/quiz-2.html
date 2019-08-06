@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon.ico?v=12" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico?v=1" type="image/x-icon">
   <link rel="stylesheet" href="./css/libs.min.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
@@ -25,115 +25,74 @@
   <div class="page-wrapper">
 
     <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
-    <div class="callback__wrapper">
-      <div class="callback__items">
-        <div class="callback__item">
-          <a target="_parent" href="https://api.whatsapp.com/send?phone=77474890907" id="whatsapp">
-            <i class="callback__icon callback__whatsapp"></i> WhatsApp
-          </a>
-        </div>
-        <div class="callback__item">
-          <a href="tel:+77474890907" id="callMe" class="call-me">
-            <i class="callback__icon callback__phone"></i>  Позвонить
-          </a>
-        </div>
-      </div>
-    </div>
 
-    <header class="header">
+
+    <section class="section s-tarif" id="tarif">
       <div class="container">
-        <div class="header__content">
-          <a href="/" class="logo">
-            <img src="./img/logo.png" alt="">
-          </a>
-
-          <div class="grow"></div>
-
-          <div class="header__phone d-none d-md-block">
-            <a href="tel:+77474890907" class="text-phone" id="phone_number">+7 747 489 09 07</a>
-          </div>
-
-          <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
-
+        <div class="s-tarif__title"> <br>
         </div>
-      </div>
-    </header>
-    
-    <section class="section s-pdf">
-      <div class="container">
-
-        <div class="pdf">
-          <img src="./img/8.png" alt="">
-          <div class="pdf__block">
-            <div class="pdf__text">
-              скачай бесплатно pdf</div>
-            <div class="pdf__title">8 ПРАВИЛ СДАЧИ&nbsp;<span>IELTS от экзаменаторов сша&nbsp;на 8.0 </span>               
-            </div>
-            <ul>
-              <li>И получи подарок - бесплатный билет на вебинар:&nbsp;</li>
-              <li><strong>"Как подготовиться и сдать IELTS на 8.0.?"</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="form form--horizontal wow slideInUp">
-          <form action="/mail.php" method="post">
-            <div class="form__title">Введи данные, чтобы получить pdf и приглашение на вебинар</div>
-            <div class="form__content">
-
-              <input type="hidden" name="info" value="Получите pdf-файл ниже">
-
-              <div class="input-div">
-                <input type="text" class="input" name="name" placeholder="Имя">
-              </div>
-
-              <div class="input-div">
-                <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required="">
-                <span class="error-message">Заполните это поле</span>
-              </div>
+		<h2 class="section-title section-title--min">ТАРИФЫ</h2>
+	 <div class="s-student__text">Для того, чтобы <span>забронировать место</span>, просто нажми на кнопку. </div>
+        <div class="tab">
+          <div class="tab__links">
+            <div class="row justify-content-center">
+              <div class="col-xxl-4 col-xl-4 col-lg-5">
+                <div class="tab__link active" data-id="tab1">
+                  <div class="tarif">
+                    
+                    <ul>
+					  <center><a href="https://wa.me/77474890907?text=pay-vip" button class="button">ТАРИФ VIP</button> </a></center>
+					  
+               
+                    </ul>
+                  </div>
+                </div>
+              </div>              
+              <div class="col-xxl-4 col-xl-4 col-lg-5">
+                <div class="tab__link" data-id="tab2">
+                  <div class="tarif">
+       
+                    <ul>
+					  <center><a href="https://wa.me/77474890907?text=pay-standart" button class="button">ТАРИФ Стандарт</button> </a></center>
+			
+                         
+                    </ul>
+                  </div>
+                </div>
+              </div>              
+              <div class="col-xxl-4 col-xl-4 col-lg-5">
+                <div class="tab__link" data-id="tab3">
+                  <div class="tarif">
+                  
+                    <ul>
+					<center><a href="https://wa.me/77474890907?text=pay-bazoviy" button class="button">ТАРИФ Базовый</button> </a></center>
               
-              <div class="input-div">
-                <input type="email" class="input" name="email" placeholder="Email">
-              </div>
-            </div>
-            <div class="form__info">*Телефон используется лишь в целях информирования
-                и не передается третьим лицам!</div>
-            <button class="button ajax-submit" type="submit" id="polu4it_pdf">Получить PDF</button>
-          </form>
+                    </ul>
+				
+                  </div>
+                </div>
+              </div> 
+            </div>             
+          </div>         
+          
+    
         </div>
+        
+      
       </div>
     </section>
+
+
+
     
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__content">
-          <a href="/" class="logo">
-            <img src="./img/logo.png" alt="">
-          </a>
 
-          <div class="footer__block">
-            <div class="footer__ip">© 2019 smarteng.me <br>
-              ИП Константин Авдеенко
-            </div>
-            <div class="bold" data-remodal-target="politika-modal">Политика конфиденциальности</div>
-            <div class="bold">Способы оплаты</div>
-            <div class="bold">Договор оферты</div>
-          </div>
-
-          <a href="" class="footer__info">info@smarteng.me</a>
-
-          <div class="footer__address">Алматы, пр-т Жибек-Жолы <br>
-              дом 135. этаж 12</div>
-
-          <div class="footer__phone">
-            <a href="tel:+77474890907" class="text-phone" id="phone_number">+7 747 489 09 07</a>
-          </div>
-
-          <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать звонок</a>          
-        </div>
-      </div>
-    </footer>
+   
   </div>
+
+  <div class="remodal question-modal" data-remodal-id="question-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    
+    </div>  
 
   <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
@@ -155,6 +114,14 @@
         </div>
       </form>
     </div>    
+  </div>
+
+  <div class="remodal remodal--small" data-remodal-id="form-garant" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+
+ 
   </div>
 
   <div class="remodal politika-modal" data-remodal-id="politika-modal" data-remodal-options="hashTracking: true">

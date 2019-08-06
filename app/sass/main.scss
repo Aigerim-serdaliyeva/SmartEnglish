@@ -697,7 +697,7 @@
     background-image: url("../img/about-back-bottom.png");
     background-position: bottom center;
     padding: 50px 0 420px;
-    margin-top: 0;
+    margin-top: 0;  
   }
   .about {
     max-width: 361px;
@@ -1338,13 +1338,13 @@
       text-align: right;
 
       &__block {
-        max-width: 140px;
+        max-width: 180px;
         width: 100%;
         margin: 0 auto;
       }
 
       &__none {
-        font-size: 18px;
+        font-size: 30px;
         color: $accent;
         position: relative;
         display: inline-block;
@@ -1850,6 +1850,11 @@
       max-width: 350px;
     }
   }
+}
+
+.quiz-video-modal {
+  max-width: 700px;
+  padding: 0;
 }
 
 .s-format {
