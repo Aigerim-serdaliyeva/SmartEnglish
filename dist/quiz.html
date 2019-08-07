@@ -91,7 +91,8 @@
     
     <section class="section s-quiz" id="quiz">
       <img class="s-quiz--left" src="./img/quiz-left.png" alt="">
-      <img class="s-quiz--right" src="./img/gratis-right.png" alt="">
+      <img class="s-quiz--right d-none d-md-block" src="./img/gratis-right.png" alt="">
+      <img class="s-quiz--right d-block d-md-none" src="./img/quiz-back-mob.png" alt="">
       <div class="container">
         <div class="row justify-content-center">
           <div class="offset-xxl-6 col-xxl-8 offset-xl-3 col-xl-11 col-lg-12">
@@ -123,7 +124,7 @@
             </div>
           </div>
         </div>  
-        <a href="https://www.youtube.com/watch?v=CdXYr_1v4R4" target="_blank" class="s-quiz__img">
+        <a  data-remodal-target="quiz-video" class="s-quiz__img">
           <img src="./img/iMac .png" alt="">
         </a>
       </div>
@@ -203,33 +204,35 @@
               <div class="student__name">НИКИТА МАДЕР</div>
               <div class="student__uroven"><span>Изначальный уровень:</span> Intermediate</div>
               <div class="student__srok"><span>Срок обучения:</span> 1 месяц</div>
-              <div class="student__result">
-                <div class="student__table">
-                  <div class="student__learn">Listening:</div>
-                  <div class="student__ball">8.5</div>
+              <div class="d-flex d-xl-block">
+                <div class="student__result">
+                  <div class="student__table">
+                    <div class="student__learn">Listening:</div>
+                    <div class="student__ball">8.5</div>
+                  </div>
+                  <div class="student__table">
+                    <div class="student__learn">Reading:</div>
+                    <div class="student__ball">9.0</div>
+                  </div>
+                  <div class="student__table">
+                    <div class="student__learn">Writing:</div>
+                    <div class="student__ball">6.5</div>
+                  </div>
+                  <div class="student__table">
+                    <div class="student__learn">Speaking:</div>
+                    <div class="student__ball">7.5</div>
+                  </div>
+                  <div class="student__table">
+                    <div class="student__learn student__learn--italic">Общий балл:</div>
+                    <div class="student__ball student__ball--max">8.0</div>
+                  </div>
                 </div>
-                <div class="student__table">
-                  <div class="student__learn">Reading:</div>
-                  <div class="student__ball">9.0</div>
-                </div>
-                <div class="student__table">
-                  <div class="student__learn">Writing:</div>
-                  <div class="student__ball">6.5</div>
-                </div>
-                <div class="student__table">
-                  <div class="student__learn">Speaking:</div>
-                  <div class="student__ball">7.5</div>
-                </div>
-                <div class="student__table">
-                  <div class="student__learn student__learn--italic">Общий балл:</div>
-                  <div class="student__ball student__ball--max">8.0</div>
-                </div>
-              </div>
-              <div class="student__ielts">
-                <a href="./img/ielts-big-1.jpg" class="ielts" data-fancybox="ieltsGallery">
-                  <img src="./img/ielts-1.jpg" alt="">
-                </a>
-              </div>  
+                <div class="student__ielts">
+                  <a href="./img/ielts-big-1.jpg" class="ielts" data-fancybox="ieltsGallery">
+                    <img src="./img/ielts-1.jpg" alt="">
+                  </a>
+                </div> 
+              </div> 
               <div class="student__comment">
                 <img src="./img/student-comment-figure.png" alt="">
                 <div class="student__comment__title">“Готовился к 
@@ -247,33 +250,35 @@
               <div class="student__name">Алексей Архангельский</div>
               <div class="student__uroven"><span>Изначальный уровень:</span> Intermediate</div>
               <div class="student__srok"><span>Срок обучения:</span> 1 месяц (ускоренно)</div>
-              <div class="student__result">
-                <div class="student__table">
-                  <div class="student__learn">Listening:</div>
-                  <div class="student__ball">9.0</div>
+              <div class="d-flex d-xl-block">
+                <div class="student__result">
+                  <div class="student__table">
+                    <div class="student__learn">Listening:</div>
+                    <div class="student__ball">9.0</div>
+                  </div>
+                  <div class="student__table">
+                    <div class="student__learn">Reading:</div>
+                    <div class="student__ball">8.5</div>
+                  </div>
+                  <div class="student__table">
+                    <div class="student__learn">Writing:</div>
+                    <div class="student__ball">7.0</div>
+                  </div>
+                  <div class="student__table">
+                    <div class="student__learn">Speaking:</div>
+                    <div class="student__ball">7.5</div>
+                  </div>
+                  <div class="student__table">
+                    <div class="student__learn student__learn--italic">Общий балл:</div>
+                    <div class="student__ball student__ball--max">8.0</div>
+                  </div>
                 </div>
-                <div class="student__table">
-                  <div class="student__learn">Reading:</div>
-                  <div class="student__ball">8.5</div>
-                </div>
-                <div class="student__table">
-                  <div class="student__learn">Writing:</div>
-                  <div class="student__ball">7.0</div>
-                </div>
-                <div class="student__table">
-                  <div class="student__learn">Speaking:</div>
-                  <div class="student__ball">7.5</div>
-                </div>
-                <div class="student__table">
-                  <div class="student__learn student__learn--italic">Общий балл:</div>
-                  <div class="student__ball student__ball--max">8.0</div>
-                </div>
-              </div>
-              <div class="student__ielts">
-                <a href="./img/ielts-big-1.jpg" class="ielts" data-fancybox="ieltsGallery">
-                  <img src="./img/ielts-1.jpg" alt="">
-                </a>
-              </div>              
+                <div class="student__ielts">
+                  <a href="./img/ielts-big-1.jpg" class="ielts" data-fancybox="ieltsGallery">
+                    <img src="./img/ielts-1.jpg" alt="">
+                  </a>
+                </div> 
+              </div>             
               <div class="student__comment">
                 <img src="./img/student-comment-figure.png" alt="">
                 <div class="student__comment__title">“IELTS нужен был для учебы в Пражском университете”</div>
@@ -697,6 +702,7 @@
                     <ul>
                       <li>10 уроков (по 2 часа)</li>
                     </ul>
+                    <button class="button button--tarif" data-remodal-target="tarif-modal-1">Узнать стоимость</button>
                   </div>
                 </div>
               </div>              
@@ -714,6 +720,7 @@
                       <li>2 устных экзамена с 
                           преподавателем по Skype</li>
                     </ul>
+                    <button class="button button--tarif" data-remodal-target="tarif-modal-2">Узнать стоимость</button>
                   </div>
                 </div>
               </div>              
@@ -738,13 +745,14 @@
                           <span>заветной девятке (9!!!)</span> на 
                           экзамене!</li>
                     </ul>
+                    <button class="button button--tarif" data-remodal-target="tarif-modal-3">Узнать стоимость</button>
                   </div>
                 </div>
               </div> 
             </div>             
           </div>         
           
-          <div class="tab__contents">
+          <div class="tab__contents d-none d-xl-block">
             <div class="tab__content active" data-tab="tab1">
               <div class="select">
                 <div class="select__aside">
@@ -1029,7 +1037,7 @@
             </div>
           </div>                     
         </div>
-        <div class="command__content" data-target="command-1">
+        <div class="command__content d-none d-md-flex" data-target="command-1">
           <div class="command__image">
             <img src="./img/Константин-2.png" alt="Константин">
           </div>
@@ -1128,7 +1136,124 @@
             </div>
             <a href="#" class="more"></a>
           </div>
-        </div>        
+        </div>   
+        
+        
+        <div class="carousel-command2">
+          
+          <div class="slick-slide">
+            <div class="command__content">
+              <div class="command__image">
+                <img src="./img/Зак-2.png" alt="Зак">
+              </div>
+              <div class="command__block">
+                <div class="command__name">Ник Зак</div>
+                <div class="command__summary">Эксперт школы : «Smart English»</div>
+                <div class="command__text">
+                  <p>Работала с компаниями: «English Language Academy»; Казахстан Тержолы; Дом Министерств; </p>
+                  <p>Практика в Назарбаев Интеллектуальной Школе </p>
+                  <p>6 лет работы с американцами и британцами в: НИШ IB; Astana Forum; Astana EXPO 2017; </p>
+                  <p>Личный переводчик представителя посольства Британии в 2015 году   </p>             
+                </div>
+                <a href="#" class="more"></a>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="command__content" >
+              <div class="command__image">
+                <img src="./img/Константин-2.png" alt="Константин">
+              </div>
+              <div class="command__block">
+                <div class="command__name">Константин Авдеенко</div>
+                <div class="command__summary">Основатель Smart English</div>
+                <div class="command__text">
+                  <p>Мы живем в мире постоянно ускоряющегося прогресса. В современном мире постепенно стираются все рамки и границы.  </p>
+                  <p>Ты можешь общаться с миллионами людей из всех стран мира по интернету. Самолет меньше, чем за 24 часа готов доставить тебя в любую точку нашей прекрасной планеты. Ты можешь переехать жить в ту страну, которой тебе захочется.</p>
+                  <p>А для того, чтобы научиться чему-то не нужны годы и отсиживание на традиционных скучных лекциях. Ты свободно может обучиться чему угодно не выходя из дома.</p>
+                  <p>Идея Smart English как раз в том, чтобы помочь тебе как можно эффективнее получить сертификат IELTS, так необходимый для достижения.. </p>
+                </div>
+                <a href="#" class="more"></a>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="command__content" >
+              <div class="command__image">
+                <img src="./img/Ляззат-2.png" alt="Ляззат">
+              </div>
+              <div class="command__block">
+                <div class="command__name">Ляззат Толенова</div>
+                <div class="command__summary">Эксперт школы : «Smart English»</div>
+                <div class="command__text">
+                  <p>Работала с компаниями: «English Language Academy»; Казахстан Тержолы; Дом Министерств; </p>
+                  <p>Практика в Назарбаев Интеллектуальной Школе </p>
+                  <p>6 лет работы с американцами и британцами в: НИШ IB; Astana Forum; Astana EXPO 2017; </p>
+                  <p>Личный переводчик представителя посольства Британии в 2015 году   </p>             
+                </div>
+                <a href="#" class="more"></a>
+              </div>
+            </div>
+          </div>          
+          <div class="slick-slide">
+            <div class="command__content" >
+              <div class="command__image">
+                <img src="./img/Анатолий-2.png" alt="Анатолий">
+              </div>
+              <div class="command__block">
+                <div class="command__name">Анатолий</div>
+                <div class="command__summary">Анатолий выполняет обязанности IT специалиста</div>
+                <div class="command__text">                 
+                  <p>Контролирует технический процесс обучения</p>
+                  <p>Помогает ученикам решать технические проблемы связанные с образовательной платформой</p>
+                  <p>Whstsapp онлайн поддержка.</p>
+                  <p>Веб разработчик.</p>
+                  <p>Модератор при проведении вебинара можно так указать просто</p>                
+                </div>
+                <a href="#" class="more"></a>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="command__content" >
+              <div class="command__image">
+                <img src="./img/Оксана-2.png" alt="Оксана">
+              </div>
+              <div class="command__block">
+                <div class="command__name">Оксана</div>
+                <div class="command__summary">Лингвист, преподаватель иностранных языков</div>
+                <div class="command__text">
+                  <p>Окончила Марийский государственный университет, факультет Международных отношений</p>
+                  <p>Опыт переводов 10 лет</p>
+                  <p>Сдавала BULATS на С1</p>
+                  <p>Переводила для Внешнеэкономического форума в 2016 и 2017, компании ODLO (Швейцария), Stevia  </p>              
+                </div>
+                <a href="#" class="more"></a>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="command__content" >
+              <div class="command__image">
+                <img src="./img/Екатерина-2.png" alt="Екатерина">
+              </div>
+              <div class="command__block">
+                <div class="command__name">Екатерина</div>
+                <div class="command__summary"></div>
+                <div class="command__text">
+                    <p>Закончила РУДН факультет иностранных языков 2004 году</p>
+                    <p>2005- 2007 г.г.Училась грамматике и разгов.речи в США у американки, носителя языка в течении 2 лет, жила там в штате Мэрилэнд Фредерик, возле Вашингтона. </p>
+                    <p>При переезде в Турцию сдала межд.экзамен Bulats , бизнес английский,  с итоговым урлвнем С1.( компьютерный вариант онлайн 4 часа подряд)</p>
+                    <p>Учит турецких детей разговорной речи в Турции, грамматике со Стамбула, </p>
+                    <p>Русскоязычных из России обучает онлайн</p>
+                    <p>Использую британское произношение </p>
+                    <p>Владеет свободно русским, марийским, английским, турецким В2.    </p>                
+                </div>
+                <a href="#" class="more"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1398,7 +1523,7 @@
               <div class="line__grey"></div>
             </div>
           </div>
-          <div class="question__text">Твой нынешний уровень английского языка</div>
+          <div class="question__text">сдавал (-а) ли ты ielts ранее?</div>
           <input type="hidden" name="Вопрос2" value="Твой нынешний уровень английского языка">
           <div class="question__variants">
             <label class="label">
@@ -1539,6 +1664,176 @@
     
       </form>    
     </div>  
+  
+    <div class="remodal tarif-modal" data-remodal-id="tarif-modal-1" data-remodal-options="hashTracking: true">
+      <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+      
+      <div class="select">
+        <div class="select__aside">
+          <div class="select__title">Выбранный
+              тариф: </div>
+          <div class="select__standart">Базовый</div>
+          <div class="price__none">79 990 тг.</div>
+          <div class="price">39 990 тг.</div>
+        </div>
+        <div class="select__main">
+          <div class="select__title">К нему идут бонусЫ:</div>
+          <div class="select__content">
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс Intermediate»</div>
+              <div class="price__none">20 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс по написание 
+                  Эссе+карточки + 
+                  книга 250 грам.
+                  упражнений»</div>
+              <div class="price__none">50 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс как поступить
+                  в лучшие вузы мира»</div>
+              <div class="price__none">40 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Как получить 
+                  стипендию Болашак»</div>
+              <div class="price__none">20 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+          </div>
+        </div>
+        <div class="select__form">
+          <div class="select__title">Все это ты получаешь за:</div>
+          <div class="price__none">79 990 тг.</div>
+          <div class="price">39 990 тг.</div>
+          <div class="timer__title">Цена повыситься через:</div>
+          <div class="timer">
+            <script src="//megatimer.ru/get/c05646a6efe46923549baa69519828c8.js"></script>
+          </div>
+          <button class="button button--border">Заказать консультацию</button>
+          <button class="button">Купить курс</button>
+        </div>
+      </div>
+    </div>  
+    
+    <div class="remodal tarif-modal" data-remodal-id="tarif-modal-2" data-remodal-options="hashTracking: true">
+      <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+      <div class="select">
+        <div class="select__aside">
+          <div class="select__title">Выбранный
+              тариф: </div>
+          <div class="select__standart">Стандарт</div>
+          <div class="price__none">159 000 тг.</div>
+          <div class="price">79 990 тг.</div>
+        </div>
+        <div class="select__main">
+          <div class="select__title">К нему идут бонусЫ:</div>
+          <div class="select__content">
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс Intermediate»</div>
+              <div class="price__none">20 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс по написание 
+                  Эссе+карточки + 
+                  книга 250 грам.
+                  упражнений»</div>
+              <div class="price__none">50 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс как поступить
+                  в лучшие вузы мира»</div>
+              <div class="price__none">40 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Как получить 
+                  стипендию Болашак»</div>
+              <div class="price__none">20 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+          </div>
+        </div>
+        <div class="select__form">
+          <div class="select__title">Все это ты получаешь за:</div>
+          <div class="price__none">240 000 тг.</div>
+          <div class="price">79 990 тг.</div>
+          <div class="timer__title">Цена повыситься через:</div>
+          <div class="timer">
+            <script src="//megatimer.ru/get/c05646a6efe46923549baa69519828c8.js"></script>
+          </div>
+          <button class="button button--border">Заказать консультацию</button>
+          <button class="button">Купить курс</button>
+        </div>
+      </div>
+    </div>  
+
+    <div class="remodal tarif-modal" data-remodal-id="tarif-modal-3" data-remodal-options="hashTracking: true">
+      <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+      <div class="select">
+        <div class="select__aside">
+          <div class="select__title">Выбранный
+              тариф: </div>
+          <div class="select__standart">Vip</div>
+          <div class="price__none">279 000 тг.</div>
+          <div class="price">139 990 тг.</div>
+        </div>
+        <div class="select__main">
+          <div class="select__title">К нему идут бонусЫ:</div>
+          <div class="select__content">
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс Intermediate»</div>
+              <div class="price__none">20 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс по написание 
+                  Эссе+карточки + 
+                  книга 250 грам.
+                  упражнений»</div>
+              <div class="price__none">50 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Курс как поступить
+                  в лучшие вузы мира»</div>
+              <div class="price__none">40 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+            <div class="select__bonus">
+              <div class="select__bonus__title">«Как получить 
+                  стипендию Болашак»</div>
+              <div class="price__none">20 000 тг.</div>
+              <div class="price">0 тг.</div>
+            </div>
+          </div>
+        </div>
+        <div class="select__form">
+          <div class="select__title">Все это ты получаешь за:</div>
+          <div class="price__none">279 000 тг.</div>
+          <div class="price">139 990 тг.</div>
+          <div class="timer__title">Цена повыситься через:</div>
+          <div class="timer">
+            <script src="//megatimer.ru/get/c05646a6efe46923549baa69519828c8.js"></script>
+          </div>
+          <button class="button button--border">Заказать консультацию</button>
+          <button class="button">Купить курс</button>
+        </div>
+      </div>
+    </div>  
+
+  <div class="remodal quiz-video-modal" data-remodal-id="quiz-video" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+    <div class="video__label">
+      <iframe height="350" src="https://www.youtube.com/embed/Gdma5UiMaEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>  
 
   <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>

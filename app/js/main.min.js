@@ -73,6 +73,7 @@ $(document).ready(function () {
     var $href = $(this).attr('href');
     if ($href.length > 1 && $href.charAt(0) == '#' && $($href).length > 0) {
       e.preventDefault();
+      var headerHeight = $('header.header').innerHeight();
       // отнимаем высоту шапки, для того чтобы шапка не прикрывала верхнию часть блока
       var top = $($href).offset().top - headerHeight;
       $html.stop().animate({ scrollTop: top }, "slow", "swing");
@@ -320,6 +321,26 @@ $('.more').click(function (e) {
           breakpoint: 992,
           settings: {
               slidesToShow: 1,
+          }      
+        }
+    ]
+  });
+
+  
+  $('.carousel-command2').slick({
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    draggable: false,
+    centerPadding: '0px',
+    responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 1,
           }      
         }
     ]

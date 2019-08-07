@@ -287,6 +287,10 @@
     }
   }
 
+  .select {
+    padding: 30px 15px;
+  }
+
   .s {
     &-quiz {
       padding: 200px 0 50px;
@@ -348,9 +352,7 @@
     &-tarif {
       margin-top: 0;
 
-      .select {
-        padding: 30px 15px;
-      }
+      
     }
 
     &-command {
@@ -460,6 +462,38 @@
   
   .section {
     padding: 50px 0;
+  }
+
+  .tarif-modal {
+    padding: 0;
+    border-radius: 40px;
+  }
+
+  .select {
+    display: block;
+    margin-top: 0;
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__aside {
+      max-width: none;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    &__main {
+      max-width: none;
+      margin-bottom: 25px;
+    }
+    &__form {
+      max-width: none;
+      text-align: center;
+      .timer {
+        margin: 0 auto 20px;
+      }
+      .button {
+        display: block;
+      }
+    }
   }
 
   .s {
@@ -622,9 +656,14 @@
 
     &-tarif {
       padding: 50px 0;
+      
       .tarif {
         margin: 0 auto 30px;
         padding: 20px 10px;
+
+        .button--tarif {
+          display: block;
+        }
         &__title {
           margin-bottom: 25px;
         }
@@ -635,32 +674,6 @@
           li {
             font-size: 14px;
             margin-bottom: 10px;
-          }
-        }
-      }
-
-      .select {
-        display: block;
-        &__title {
-          margin-bottom: 15px;
-        }
-        &__aside {
-          max-width: none;
-          text-align: center;
-          margin-bottom: 25px;
-        }
-        &__main {
-          max-width: none;
-          margin-bottom: 25px;
-        }
-        &__form {
-          max-width: none;
-          text-align: center;
-          .timer {
-            margin: 0 auto 20px;
-          }
-          .button {
-            display: block;
           }
         }
       }
@@ -869,6 +882,14 @@
     padding: 30px 15px 15px;
   }
 
+  .tarif-modal {
+    padding: 0;
+  }
+
+  .quiz-video-modal {
+    padding: 0;
+  }
+
   .header {
     .grow {
       display: block;
@@ -907,6 +928,10 @@
           img {
             max-width: 300px;
           }
+        }
+
+        &__ielts {
+          width: 100px;
         }
       }
     }
@@ -996,6 +1021,22 @@
       // background-position: center calc(bottom - 300px) ;
     }
 
+    &-command {
+      .carousel-command {
+        display: none;
+      }
+
+      .carousel-command2 {
+        display: block;
+      }
+
+      .command {
+        &__text {
+          max-height: 160px;
+        }
+      }
+    }
+
     &-vopros {
       background-image: none;
       .vopros {
@@ -1074,6 +1115,43 @@
     }
   }
 
+  .select {
+    padding: 50px 5px 10px;
+    margin: 0 -20px;
+    &__title {
+      font-size: 16px;
+    }
+    &__aside {
+      max-width: none;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    &__main {
+      max-width: none;
+      margin-bottom: 25px;
+    }
+    &__content {
+      padding: 15px 10px;
+    }
+    &__bonus {
+      &__title {
+        font-size: 14px;
+        max-width: 150px;
+      }
+      .price {
+        font-size: 14px;
+        &__none {
+          font-size: 13px;
+        }
+      }
+    }
+    &__form {
+      .timer {
+        margin: 0 auto 10px;
+      }
+    }
+  }  
+
   .s {
 
     &-program {
@@ -1088,12 +1166,16 @@
     &-gratis {
       &--right {
         // display: none;
+        right: -70px;
+        top: -50px;
       }
     }
 
     &-quiz {
+       
       &--right {
-        // display: none;
+        right: -70px;
+        top: -25px;    
       }
       &__block {
         display: block;
@@ -1232,41 +1314,21 @@
     }
 
     &-tarif {
-      .select {
-        padding: 20px 5px;
-        &__title {
-          font-size: 16px;
+          
+    }
+
+    &-command {
+      .carousel-command2 {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-bottom: 40px;
+      }
+      .slick-slide {
+        padding: 10px 15px 20px;
+        .command__content {
+          box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07)
         }
-        &__aside {
-          max-width: none;
-          text-align: center;
-          margin-bottom: 25px;
-        }
-        &__main {
-          max-width: none;
-          margin-bottom: 25px;
-        }
-        &__content {
-          padding: 15px 10px;
-        }
-        &__bonus {
-          &__title {
-            font-size: 14px;
-            max-width: 150px;
-          }
-          .price {
-            font-size: 14px;
-            &__none {
-              font-size: 13px;
-            }
-          }
-        }
-        &__form {
-          .timer {
-            margin: 0 auto 10px;
-          }
-        }
-      }      
+      }
     }
 
   }
