@@ -5,7 +5,6 @@ $(document).ready(function () {
   var $html = $("html, body");
   var $header = $(".header");
   var $menu = $(".main-menu");
-  var headerHeight = 160;
   var $hamburger = $(".hamburger");
 
   // забираем utm из адресной строки и пишем в sessionStorage, чтобы отправить их на сервер при form submit
@@ -16,10 +15,6 @@ $(document).ready(function () {
   } else {
     // если нет то берем utm из sessionStorage
     utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
-  }
-
-  if ($wnd.width() < 1592) {
-    headerHeight = 84;
   }
 
   // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
@@ -45,7 +40,7 @@ $(document).ready(function () {
     } else {
       $header.removeClass('header--scrolled');
     }
-
+    var headerHeight = $('header.header').innerHeight();
     var scrollPos = $wnd.scrollTop() + headerHeight;
 
     // добавляет клас active в ссылку меню, когда находимся на блоке, куда эта ссылка ссылается
@@ -75,7 +70,12 @@ $(document).ready(function () {
       e.preventDefault();
       var headerHeight = $('header.header').innerHeight();
       // отнимаем высоту шапки, для того чтобы шапка не прикрывала верхнию часть блока
-      var top = $($href).offset().top - headerHeight;
+      var $section = $($href);
+      var top = $section.offset().top - headerHeight;
+      if ($(this).data('scroll') === 'title') {
+        top = $section.find('.section-title').offset().top - headerHeight - 20;
+      }
+
       $html.stop().animate({ scrollTop: top }, "slow", "swing");
     }
 

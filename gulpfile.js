@@ -38,6 +38,22 @@ gulp.task('libs-js', function () {
     .pipe(gulp.dest('app/js'));
 });
 
+gulp.task('libs-css', function () {
+  return gulp.src([
+    '../../node_modules/remodal/dist/remodal',
+    '../../node_modules/remodal/dist/remodal-default-theme',
+    '../../node_modules/owl.carousel/dist/assets/owl.carousel.min',
+    '../../node_modules/hamburgers/dist/hamburgers.min',
+    '../../node_modules/font-awesome/css/font-awesome.min',
+    '../../node_modules/slick-carousel/slick/slick.scss',
+    '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox'
+  ])
+    .pipe(concat('libs.min.css'))
+    .pipe(autoprefixer(['last 20 versions']))
+    .pipe(cleanCSS()) // Опционально, закомментировать при отладке
+    .pipe(gulp.dest('app/css'));
+});
+
 gulp.task('browser-sync', function () {
   browserSync({
     server: {
@@ -59,7 +75,7 @@ gulp.task('sass', function () {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('watch', ['sass', 'libs-js', 'main-js', 'browser-sync'], function () {
+gulp.task('watch', ['sass', 'libs-css', 'libs-js', 'main-js', 'browser-sync'], function () {
   gulp.watch('app/sass/**/*.+(sass|scss)', ['sass']);
   gulp.watch('app/js/main.js', ['main-js']);
   gulp.watch(['app/*.html'], browserSync.reload);
@@ -71,7 +87,7 @@ gulp.task('imagemin', function () {
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'libs-js', 'main-js'], function () {
+gulp.task('build', ['removedist', 'imagemin', 'sass', 'libs-js', 'libs-css', 'main-js'], function () {
 
   var buildFiles = gulp.src([
     'app/*.html',
