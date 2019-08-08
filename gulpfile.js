@@ -40,13 +40,13 @@ gulp.task('libs-js', function () {
 
 gulp.task('libs-css', function () {
   return gulp.src([
-    '../../node_modules/remodal/dist/remodal',
-    '../../node_modules/remodal/dist/remodal-default-theme',
-    '../../node_modules/owl.carousel/dist/assets/owl.carousel.min',
-    '../../node_modules/hamburgers/dist/hamburgers.min',
-    '../../node_modules/font-awesome/css/font-awesome.min',
-    '../../node_modules/slick-carousel/slick/slick.scss',
-    '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox'
+    'node_modules/remodal/dist/remodal.css',
+    'node_modules/remodal/dist/remodal-default-theme.css',
+    'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
+    'node_modules/hamburgers/dist/hamburgers.min.css',
+    'node_modules/font-awesome/css/font-awesome.min.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
   ])
     .pipe(concat('libs.min.css'))
     .pipe(autoprefixer(['last 20 versions']))
