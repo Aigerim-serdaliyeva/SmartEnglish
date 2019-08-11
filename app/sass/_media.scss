@@ -763,6 +763,12 @@
     }
   }
 
+  .select {
+    &__form {
+      padding: 0 15px;
+    }
+  }
+
   .question-modal {
     .question {
       &__text {
@@ -932,10 +938,16 @@
           }
         }
 
+        &__result {
+          max-width: 135px;
+          width: 100%;
+        }
+
         &__ielts {
-          width: 100px;
+          width: 90px;
         }
       }
+      
     }
 
     &-secret {
@@ -1016,11 +1028,7 @@
 
     &-program {
       background-image: url("../img/figure-back.png");
-      // background-size: contain;
       background-position: bottom right;
-      // background-position: calc(100% -100px) bottom;
-      // background-image: url("../img/tarif-back.png");
-      // background-position: center calc(bottom - 300px) ;
     }
 
     &-command {
@@ -1082,6 +1090,9 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  .fancybox-slide--video {
+    padding: 0;
+  }
 
   .page-top {
     bottom: 80px;
@@ -1168,7 +1179,7 @@
     &-gratis {
       &--right {
         // display: none;
-        right: -70px;
+        right: -135px;        
         top: -50px;
       }
     }
@@ -1176,7 +1187,7 @@
     &-quiz {
        
       &--right {
-        right: -70px;
+        right: -115px;
         top: -25px;    
       }
       &__block {

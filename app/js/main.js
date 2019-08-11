@@ -181,14 +181,7 @@ $(document).ready(function () {
     $tab.find(".tab__content").removeClass("active").filter("[data-tab=" + id + "]").addClass("active");
   });
 
-  $tabContents = $(".s-tarif .tab__contents");
-  $(".s-tarif .tab__link").click(function() {
-    if ($wnd.width() < 992) {
-      var tabContentsTop = $tabContents.offset().top - $header.height() - 25;
-      console.log('tabContentsTop', tabContentsTop);
-      $html.stop().animate({ scrollTop: tabContentsTop }, 'slow', 'swing');
-    }
-  });
+  
 
   var $questionModal = $(".question-modal");
 $(".perehod").click(function(e) {
@@ -264,7 +257,7 @@ $('.more').click(function (e) {
 
 
   $(".carousel-student").owlCarousel({
-    loop: false,
+    loop: true,
     dots: false, 
     nav: true,
     smartSpeed: 500,
