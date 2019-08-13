@@ -475,6 +475,9 @@
     &__title {
       margin-bottom: 15px;
     }
+    &__content {
+      height: auto;
+    }
     &__aside {
       max-width: none;
       text-align: center;
@@ -654,7 +657,7 @@
         margin: 0 auto;
       }
     }
-
+    
     &-tarif {
       padding: 50px 0;
       

@@ -5644,7 +5644,7 @@ h1, h2, h3, h4, h5, h6 {
             align-items: center;
     max-width: 975px;
     width: 100%;
-    margin: 0 auto 25px; }
+    margin: 0 auto 15px; }
   .header__phone {
     font-size: 16px;
     font-weight: bold;
@@ -6809,7 +6809,8 @@ h1, h2, h3, h4, h5, h6 {
     background-image: -webkit-linear-gradient(45deg, #ff7080 0%, #bbd0ff 100%);
     background-image: -ms-linear-gradient(45deg, #ff7080 0%, #bbd0ff 100%);
     padding: 30px 40px;
-    color: #fff; }
+    color: #fff;
+    height: 348px; }
   .select__form {
     max-width: 300px;
     width: 100%; }
@@ -7658,6 +7659,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0; }
     .select__title {
       margin-bottom: 15px; }
+    .select__content {
+      height: auto; }
     .select__aside {
       max-width: none;
       text-align: center;
