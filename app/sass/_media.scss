@@ -4,6 +4,13 @@
 
 @include media-breakpoint-down(xxl) {
 
+  .header {
+    padding: 15px 0 10px;
+    &__content {
+      margin: 0 auto 8px;
+    }
+  }
+
   .footer {
     font-size: 14px;
     .logo {
@@ -102,7 +109,7 @@
 @include media-breakpoint-down(xl) {
 
   .header {
-    padding: 20px;
+    padding: 10px 0;
     &__content {
       margin-bottom: 15px;
     }

@@ -164,10 +164,17 @@
     line-height: 1.5;
     text-decoration: none;
     font-weight: normal;
+    cursor: pointer;
 
     &.link {
       &:hover, &.active {
         font-weight: bold;
+      }
+    }
+
+    &.link--description {
+      &:hover, &.active {
+        font-weight: normal;
       }
     }
 
