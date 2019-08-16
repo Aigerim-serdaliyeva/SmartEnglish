@@ -5781,9 +5781,12 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     line-height: 1.5;
     text-decoration: none;
-    font-weight: normal; }
+    font-weight: normal;
+    cursor: pointer; }
     .main-menu a.link:hover, .main-menu a.link.active {
       font-weight: bold; }
+    .main-menu a.link--description:hover, .main-menu a.link--description.active {
+      font-weight: normal; }
     .main-menu a:after {
       display: block;
       content: attr(title);
@@ -7386,6 +7389,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /*==========  Desktop First  ==========*/
 @media (max-width: 1591.98px) {
+  .header {
+    padding: 15px 0 10px; }
+    .header__content {
+      margin: 0 auto 8px; }
   .footer {
     font-size: 14px; }
     .footer .logo {
@@ -7431,7 +7438,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1359.98px) {
   .header {
-    padding: 20px; }
+    padding: 10px 0; }
     .header__content {
       margin-bottom: 15px; }
   .footer {
