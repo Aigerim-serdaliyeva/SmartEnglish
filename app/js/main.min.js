@@ -48,7 +48,7 @@ $(document).ready(function () {
       var link = $(this);
       var id = link.attr('href');
 
-      if (id && id.length > 1 && id.charAt(0) == '#' && $(id).length > 0) {
+      if (id.length > 1 && id.charAt(0) == '#' && $(id).length > 0) {
         var section = $(id);
         var sectionTop = section.offset().top;
 
