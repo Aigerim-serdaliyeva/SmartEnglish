@@ -893,7 +893,14 @@
     position: absolute;
     right: 0;
     bottom: 80px;
-    cursor: pointer;
+    &__play {
+      position: absolute;      
+      cursor: pointer;
+      width: 180px;
+      height: 180px;
+      top: 25%;
+      left: 27%;
+    }
   }
 
   &__text {
@@ -952,6 +959,7 @@
   &__question {
     max-width: 330px;
     position: relative;
+    z-index: 1;
     &::before {
       content: "";
       position: absolute;

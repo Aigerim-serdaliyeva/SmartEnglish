@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="yandex-verification" content="51d4e047e76c8ebb" />
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon.ico?v=12" type="image/x-icon">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body id="main-page">
+
+  <div class="page-wrapper">
+
+    <!-- <div class="page-top"><i class="fa fa-angle-double-up"></i></div> -->
+    <div class="callback__wrapper">
+      <div class="callback__items">
+        <div class="callback__item">
+          <a target="_parent" href="https://api.whatsapp.com/send?phone=77474890907" id="whatsapp">
+            <i class="callback__icon callback__whatsapp"></i> WhatsApp
+          </a>
+        </div>
+        <div class="callback__item">
+          <a href="tel:+77474890907" id="callMe" class="call-me">
+            <i class="callback__icon callback__phone"></i>  Позвонить
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+          </a>
+
+          <div class="grow"></div>
+
+          <div class="header__phone d-none d-lg-block">
+            <a href="tel:+77474890907" class="text-phone" id="phone_number">+7 747 489 09 07</a>
+          </div>
+
+          <a href="#" class="button d-none d-md-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
+
+          <button class="hamburger hamburger--elastic hamburger--accessible">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+        <nav class="main-menu">
+          <div class="container">
+            <ul>
+              <li>
+                <a class="link link--description" title="Бесплатный онлайн мастер-класс">Бесплатный онлайн мастер-класс</a>
+              </li>
+              <li>
+                <a class="link" href="#program" title="Программа мастер-класса">Программа мастер-класса</a>
+              </li>
+              <li>
+                <a class="link" href="#master" title="Ведущие" data-scroll="title">Ведущие</a>
+              </li>
+              <li>
+                <a class="link" href="#form" title="Зарегистрироваться">Зарегистрироваться</a>
+              </li>
+              <li class="d-lg-none">
+                <a href="tel:+77474890907" class="text-phone" id="phone_number">+7 747 489 09 07</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section s-gratis" id="gratis">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="offset-xxl-6 col-xxl-8 offset-xl-5 col-xl-9 col-lg-12">
+            <div class="s-gratis__text">Бесплатный онлайн мастер-класс</div>
+            <h2 class="s-gratis__title">Как подготовиться
+              и сдать <span>IELTS на 8.0</span></h2>
+            <div class="start__title">Уделяя всего <span>4 часа</span> в неделю. За <span>2 месяца</span></div>
+            <div class="start__content">
+              <div class="start">Стартуем <span>23 июля 2019 года <br>
+                В 19:00</span> <span class="min">(по времени Нур-Султана)</span></div>
+            </div>    
+            <div class="form form--flex">
+              <form action="/mail.php" method="post">
+                <div class="form__title">Введи данные, чтобы зарегистрироваться
+                  на бесплатный онлайн мастер-класс</div> 
+                <div class="form__content">
+                  <input type="hidden" name="info" value="Введи данные, чтобы зарегистрироваться
+                  на бесплатный онлайн мастер-класс">
+    
+                  <div class="form__block">
+                    <div class="input-div">
+                      <input type="text" class="input" name="name" placeholder="Имя">
+                    </div>
+      
+                    <div class="input-div">
+                      <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required>
+                      <span class="error-message">Заполните это поле</span>
+                    </div>
+                  </div>
+                  <div class="form__block">
+                    <div class="input-div">
+                      <input type="email" class="input" name="email" placeholder="E-mail">
+                    </div>
+      
+                    <button class="button ajax-submit" type="submit" id="ya_u4astvui">Я участвую!</button>
+                  </div>
+                </div>
+                
+                <div class="form__info">
+                  <div class="info">
+                      *Телефон используется лишь в целях
+                      информирования и не передается 
+                      третьим лицам!
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="s-gratis--left" src="./img/gratis-left.png" alt="">      
+      <img class="s-gratis--right d-block d-md-none" src="./img/quiz-back-mob.png" alt="">
+      <img class="s-gratis--right d-none d-md-block" src="./img/gratis-right.png" alt="">
+    </section>
+
+    <section class="section s-program" id="program">
+      <div class="container">
+        <h2 class="section-title section-title--right">Что тебя ЖДЕТ <br>
+            на онлайн <span>мастер-классе</span></h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-12 order-lg-1">
+            <div class="program">
+              <div class="program__content">
+                <div class="program__title">Структура
+                    экзамена</div>
+                <div class="program__text">В подробностях Вы узнаете о 4 частях экзамена. Составляющие каждой из 4-х частей экзамена. Сколько времени выделяется на каждую. Какой языковой навык оценивается. Общее время экзамена. Очередность секций.&nbsp;</div>
+              </div>
+              <div class="program__num"><div class="num" >01</div></div>
+            </div>
+            <div class="program">
+              <div class="program__content">
+                <div class="program__title">Типичные ошибки
+                    в каждой из секций</div>
+                <div class="program__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie.</div>
+              </div>
+              <div class="program__num"><div class="num">02</div></div>
+            </div>
+            <div class="program">
+              <div class="program__content">
+                <div class="program__title">Советы, Основные подводные
+                    камни, Мифы и стереотипы</div>
+                <div class="program__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie.</div>
+              </div>
+              <div class="program__num"><div class="num">03</div></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-16 order-first order-lg-2">
+            <div class="program__ielts">
+              <div class="program__ielts__img">
+                <img src="./img/ielts-letter-1.png" alt="">
+              </div> 
+              <div class="program__ielts__img">
+                <img src="./img/ielts-letter-2.png" alt="">
+              </div> 
+              <div class="program__ielts__img">
+                <img src="./img/ielts-letter-3.png" alt="">
+              </div> 
+              <div class="program__ielts__img">
+                <img src="./img/ielts-letter-4.png" alt="">
+              </div> 
+              <div class="program__ielts__img">
+                <img src="./img/ielts-letter-5.png" alt="">
+              </div> 
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 order-lg-3">
+            <div class="program program--right">
+              <div class="program__content">
+                <div class="program__title">Как рассчитывается 
+                    балл</div>
+                <div class="program__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie.</div>
+              </div>
+              <div class="program__num"><div class="num">04</div></div>
+            </div>
+            <div class="program program--right">
+              <div class="program__content">
+                <div class="program__title">Чего нельзя делать
+                    на экзамене IELTS</div>
+                <div class="program__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie.</div>
+              </div>
+              <div class="program__num"><div class="num">05</div></div>
+            </div>
+          </div>
+        </div>
+        <button class="button" data-remodal-target="program-form">Я участвую!</button>
+      </div>
+    </section>
+
+    <section class="section s-master" id="master">
+      <div class="container">
+        <h2 class="section-title">Кто ведет бесплатный мастер-класс</h2>
+        <div class="row">          
+          <div class="master__num">01</div>
+          <div class="col-lg-8">
+            <div class="master">
+              <div class="master__name">Ляззат Толенова</div>
+              <div class="master__summary">Эксперт школы Smart English</div>
+              <!-- <div class="master__icons">
+                <img src="./img/facebook.png" alt="">
+                <img src="./img/instagram.png" alt="">
+              </div> -->
+              <div class="master__text">Работала с <span>компаниями</span>: «English Language Academy»,
+                  Казахстан Тержолы, Дом Министерств </div>
+              <div class="master__text"><span>Практика</span> в Назарбаев Интеллектуальной Школе </div>
+              <div class="master__text"><span>6 лет работы</span> с американцами и британцами в:
+                  НИШ IB, Astana Forum, Astana EXPO 2017</div>
+              <div class="master__text"><span>Личный переводчик</span> представителя посольства 
+                  Британии в 2015 году </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <img src="./img/master-1.png" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="master__num master__num--2">02</div>
+          <div class="col-lg-8">
+            <div class="master master--2">
+              <div class="master__name">кэвин магуайер</div>
+              <div class="master__summary">Эксперт школы Smart English</div>
+              <!-- <div class="master__icons">
+                <img src="./img/facebook.png" alt="">
+                <img src="./img/instagram.png" alt="">
+              </div> -->
+              <div class="master__text"><span>CELTA</span>&nbsp;- Cambridge certificate for teaching English to Adults</div>
+              <div class="master__text"><span>MBA</span> - leadership</div>
+              <div class="master__text"><span>KBTU</span>&nbsp;- 6 years teaching General English, Academic English for Specific purposes, Conversation English, presentation skills<span lang="EN-US"></span></div>
+              <div class="master__text"><span>Also</span> International School of Economics (IELTS teacher) - 3 years</div>
+            </div>
+            </div>
+          <div class="col-lg-8 order-lg-first">
+            <img src="./img/master-2.png" alt="">
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <section class="section s-about">
+      <div class="container">
+        <h2 class="section-title">Немного о <span>Smart English</span></h2>
+        <div class="row justify-content-center">
+          <div class="col-xl-4 col-lg-6 col-md-8">
+            <div class="about about--1">
+              <div class="about__title"><span>150+</span></div>
+              <div class="about__text">человек ежемесячно проходят
+                  обучение у нас</div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-8">
+            <div class="about about--2">
+              <div class="about__title"><span>3</span> года</div>
+              <div class="about__text">на рынке образования</div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-8">
+            <div class="about about--3">
+              <div class="about__title">УЧЕНИКИ</div>
+              <div class="about__text">со всего СНГ</div>
+            </div>
+          </div>
+          <div class="d-none d-xl-block w-100"></div>
+          <div class="col-xl-4 col-lg-6 col-md-8">
+            <div class="about about--2">
+              <div class="about__title"><span>5</span></div>
+              <div class="about__text">преподавателей в штате с
+                  сертификатами CELTA, IELTS8.5
+                  (США, Канада, Турция, РФ)</div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6 col-md-8">
+            <div class="about about--5">
+              <div class="about__title"><span>86%</span></div>
+              <div class="about__text">наших учеников набирают
+                  необходимый балл</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-form" id="form">
+      <div class="container">
+        <div class="start__content">
+          <div class="start">Стартуем <span>23 июля 2019 года <br>
+            В 19:00</span> <span class="min">(по времени Нур-Султана)</span></div>
+        </div> 
+        <div class="form form--flex">
+          <form action="/mail.php" method="post">
+            <div class="form__title">Введи данные, чтобы зарегистрироваться
+              на бесплатный онлайн мастер-класс</div> 
+            <div class="form__content">
+              <input type="hidden" name="info" value="Введи данные, чтобы зарегистрироваться
+              на бесплатный онлайн мастер-класс">
+
+              <div class="form__block">
+                <div class="input-div">
+                  <input type="text" class="input" name="name" placeholder="Имя">
+                </div>
+  
+                <div class="input-div">
+                  <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required>
+                  <span class="error-message">Заполните это поле</span>
+                </div>
+              </div>
+              <div class="form__block">
+                <div class="input-div">
+                  <input type="email" class="input" name="email" placeholder="E-mail">
+                </div>
+  
+                <button class="button ajax-submit" type="submit" id="poexali">Поехали!</button>
+              </div>
+            </div>
+            
+            <div class="form__info">
+              <div class="info">
+                  *Телефон используется лишь в целях
+                  информирования и не передается 
+                  третьим лицам!
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="top"><img src="./img/arrow-top.png" alt=""></a>
+        <div class="footer__content">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="">
+          </a>
+
+          <div class="footer__block">
+            <div class="footer__ip">© 2019 smarteng.me <br>
+              ИП Константин Авдеенко
+            </div>
+            <div class="bold" data-remodal-target="politika-modal">Политика конфиденциальности</div>
+            <div class="bold">Способы оплаты</div>
+            <div class="bold">Договор оферты</div>
+          </div>
+
+          <a href="" class="footer__info">info@smarteng.me</a>
+
+          <div class="footer__address">Алматы, пр-т Жибек-Жолы <br>
+              дом 135. этаж 12</div>
+
+          <div class="footer__phone">
+            <a href="tel:+77474890907" class="text-phone" id="phone_number">+7 747 489 09 07</a>
+          </div>
+
+          <a href="#" class="button" data-remodal-target="zvonok-modal">Заказать звонок</a>          
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+
+    <div class="form ">
+      <form action="/mail.php" method="post">
+        <div class="form__content">
+          <input type="hidden" name="info" value="Обратный звонок">
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Имя">
+          </div>                     
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required>
+            <span class="error-message">Заполните это поле</span>
+          </div>                    
+          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать звонок</button>        
+        </div>
+      </form>
+    </div>    
+  </div>
+
+  <div class="remodal program-form" data-remodal-id="program-form" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+  
+    <div class="form form--flex">
+      <form action="/mail.php" method="post">
+        <div class="form__title">Введи данные, чтобы зарегистрироваться
+          на бесплатный онлайн мастер-класс</div> 
+        <div class="form__content">
+          <input type="hidden" name="info" value="Введи данные, чтобы зарегистрироваться
+          на бесплатный онлайн мастер-класс">
+  
+          <div class="form__block">
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+          </div>
+          <div class="form__block">
+            <div class="input-div">
+              <input type="email" class="input" name="email" placeholder="E-mail">
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="poexali">Поехали!</button>
+          </div>
+        </div>
+        
+        <div class="form__info">
+          <div class="info">
+              *Телефон используется лишь в целях
+              информирования и не передается 
+              третьим лицам!
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="remodal politika-modal" data-remodal-id="politika-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="politika__title">Политика конфиденциальности</div>
+
+    <div class="politika__text">Соблюдение Вашей конфиденциальности важно для нашей компании. Поэтому мы разработали Политику Конфиденциальности, которая описывает, как используется и хранится Ваша информация. Пожалуйста, ознакомьтесь и сообщите нам, если у Вас возникнут какие-либо вопросы.</div>
+    <div class="politika__text"><span>Сбор и использование персональной информации</span><br>
+      Под персональной информацией понимаются данные, которые могут быть использованы для идентификации определенного лица либо связи с ним. От Вас может быть запрошено предоставление персональной информации в любой момент, когда Вы связываетесь с нами.</div>
+    <div class="politika__text"><span>Какую персональную информацию мы собираем</span><br>
+      Когда Вы оставляете заявку на сайте, мы можем собирать различную информацию, включая Ваше имя, номер телефона, адрес электронной почты и т.д.</div>
+    <div class="politika__text"><span>Как мы используем Вашу персональную информацию</span><br>
+      Персональная информация позволяет нам сообщать об уникальных предложениях, акциях и других мероприятиях и ближайших событиях. Время от времени мы можем использовать Вашу персональную информацию для отправки важных уведомлений и сообщений. Мы также можем использовать персональную информацию для внутренних целей: проведения аудита, анализа данных и различных исследований в целях улучшения услуг. Если Вы принимаете участие в розыгрыше призов или конкурсе, мы можем использовать информацию для управления такими программами.</div>
+    <div class="politika__text"><span>Раскрытие информации третьим лицам</span><br>
+      Мы не раскрываем полученную от Вас информацию третьим лицам.</div>
+    <div class="politika__text"><span>Исключения</span><br>
+      В соответствии с законом, судебным порядком, в судебном разбирательстве и/или на основании публичных запросов или запросов от государственных органов на территории РК. Мы также можем раскрывать информацию о Вас, если мы определим, что такое раскрытие необходимо или уместно в целях безопасности, поддержания правопорядка или иных общественно важных случаях.
+      В случае реорганизации, слияния или продажи мы можем передать собираемую нами персональную информацию соответствующему третьему лицу – правопреемнику.</div>
+    <div class="politika__text"><span>Защита персональной информации</span><br>
+      Мы предпринимаем меры предосторожности, включая административные, технические и физические для защиты Вашей персональной информации от утраты, кражи и недобросовестного использования, а также от несанкционированного доступа, раскрытия, изменения и уничтожения.</div>
+    <div class="politika__text"><span>Соблюдение Вашей конфиденциальности на уровне компании</span><br>
+      Чтобы убедиться, что Ваша персональная информация находится в безопасности, мы доводим нормы соблюдения конфиденциальности и безопасности до наших сотрудников и строго следим за исполнением мер соблюдения конфиденциальности.  </div>    
+  </div>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
