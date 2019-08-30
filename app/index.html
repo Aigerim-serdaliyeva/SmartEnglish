@@ -701,7 +701,7 @@
           <div class="tab__links">
             <div class="row justify-content-center">
               <div class="col-xxl-4 col-xl-4 col-lg-5">
-                <div class="tab__link active" data-id="tab1">
+                <div class="tab__link" data-id="tab1">
                   <div class="tarif">
                     <div class="tarif__title">ТАРИФ “Базовый”</div>
                     <div class="tarif__text">Для тех, кто хочет просто 
@@ -714,7 +714,7 @@
                 </div>
               </div>              
               <div class="col-xxl-4 col-xl-4 col-lg-5">
-                <div class="tab__link" data-id="tab2">
+                <div class="tab__link active" data-id="tab2">
                   <div class="tarif">
                     <div class="tarif__title tarif__title--blue">ТАРИФ “Стандарт”</div>
                     <div class="tarif__text">Рекомендуем!</div>
@@ -760,7 +760,7 @@
           </div>         
           
           <div class="tab__contents d-none d-xl-block">
-            <div class="tab__content active" data-tab="tab1">
+            <div class="tab__content" data-tab="tab1">
               <div class="select">
                 <div class="select__aside">
                   <div class="select__title">Выбранный
@@ -784,12 +784,12 @@
                   <div class="timer">
                     <script src="//megatimer.ru/get/c05646a6efe46923549baa69519828c8.js"></script>
                   </div>
-                  <button class="button button--border">Заказать консультацию</button>
-                  <button class="button">Купить курс</button>
+                  <button class="button button--border" data-remodal-target="form-tarif">Заказать консультацию</button>
+                  <button class="button" data-remodal-target="course-1">Купить курс</button>
                 </div>
               </div>
             </div>
-            <div class="tab__content" data-tab="tab2">
+            <div class="tab__content active" data-tab="tab2">
               <div class="select">
                 <div class="select__aside">
                   <div class="select__title">Выбранный
@@ -836,8 +836,8 @@
                   <div class="timer">
                     <script src="//megatimer.ru/get/c05646a6efe46923549baa69519828c8.js"></script>
                   </div>
-                  <button class="button button--border">Заказать консультацию</button>
-                  <button class="button">Купить курс</button>
+                  <button class="button button--border" data-remodal-target="form-tarif">Заказать консультацию</button>
+                  <button class="button" data-remodal-target="course-2">Купить курс</button>
                 </div>
               </div>
             </div>
@@ -888,8 +888,8 @@
                   <div class="timer">
                     <script src="//megatimer.ru/get/c05646a6efe46923549baa69519828c8.js"></script>
                   </div>
-                  <button class="button button--border">Заказать консультацию</button>
-                  <button class="button">Купить курс</button>
+                  <button class="button button--border" data-remodal-target="form-tarif">Заказать консультацию</button>
+                  <button class="button" data-remodal-target="course-3">Купить курс</button>
                 </div>
               </div>
             </div>
@@ -1884,6 +1884,139 @@
         </div>
       </form>
     </div>    
+  </div>
+
+  <div class="remodal form-tarif" data-remodal-id="form-tarif" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="form form--flex">
+      <form action="/mail.php" method="post">
+        <div class="s-form__title">Не нашел ответ? Закажи консультацию!</div>
+        <div class="form__title form__title--min">Мы перезвоним в течении 15 минут <br>
+            и <span>проконсультируем</span> по всем вопросам</div> 
+        <div class="form__content">
+          <input type="hidden" name="info" value="Введи данные, чтобы зарегистрироваться
+          на бесплатный онлайн мастер-класс">
+
+          <div class="form__block">
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+          </div>
+          <div class="form__block">
+            <div class="input-div">
+              <input type="email" class="input" name="email" placeholder="E-mail">
+            </div>
+
+            <button class="button button--min ajax-submit" type="submit" id="zakazat_konsultasiu">Заказать консультацию</button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+  <div class="remodal form-tarif" data-remodal-id="course-1" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="form form--flex">
+      <form action="/mail.php" method="post">
+        <div class="s-form__title">ТАРИФ “Базовый”</div>
+        <div class="form__title form__title--min">Мы перезвоним в течении 15 минут <br>
+            и <span>проконсультируем</span> по всем вопросам</div> 
+        <div class="form__content">
+          <input type="hidden" name="info" value="Купить курс на ТАРИФ “Базовый”">
+
+          <div class="form__block">
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+          </div>
+          <div class="form__block">
+            <div class="input-div">
+              <input type="email" class="input" name="email" placeholder="E-mail">
+            </div>
+
+            <button class="button button--min ajax-submit" type="submit" id="zakazat_konsultasiu">Заказать консультацию</button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+  <div class="remodal form-tarif" data-remodal-id="course-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="form form--flex">
+      <form action="/mail.php" method="post">
+        <div class="s-form__title">ТАРИФ “Стандарт”</div>
+        <div class="form__title form__title--min">Мы перезвоним в течении 15 минут <br>
+            и <span>проконсультируем</span> по всем вопросам</div> 
+        <div class="form__content">
+          <input type="hidden" name="info" value="Купить курс на ТАРИФ “Стандарт”">
+
+          <div class="form__block">
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+          </div>
+          <div class="form__block">
+            <div class="input-div">
+              <input type="email" class="input" name="email" placeholder="E-mail">
+            </div>
+
+            <button class="button button--min ajax-submit" type="submit" id="zakazat_konsultasiu">Заказать консультацию</button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+  <div class="remodal form-tarif" data-remodal-id="course-3" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="form form--flex">
+      <form action="/mail.php" method="post">
+        <div class="s-form__title">ТАРИФ “VIP”</div>
+        <div class="form__title form__title--min">Мы перезвоним в течении 15 минут <br>
+            и <span>проконсультируем</span> по всем вопросам</div> 
+        <div class="form__content">
+          <input type="hidden" name="info" value="Купить курс на ТАРИФ “VIP”">
+
+          <div class="form__block">
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Имя">
+            </div>
+
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Контактный телефон" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+          </div>
+          <div class="form__block">
+            <div class="input-div">
+              <input type="email" class="input" name="email" placeholder="E-mail">
+            </div>
+
+            <button class="button button--min ajax-submit" type="submit" id="zakazat_konsultasiu">Заказать консультацию</button>
+          </div>
+        </div>
+        
+      </form>
+    </div>
   </div>
 
   <div class="remodal politika-modal" data-remodal-id="politika-modal" data-remodal-options="hashTracking: true">

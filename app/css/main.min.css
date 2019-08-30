@@ -5987,6 +5987,12 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     bottom: -1px; }
 
+.form-tarif {
+  max-width: 750px;
+  padding: 0;
+  -webkit-border-radius: 32px;
+          border-radius: 32px; }
+
 .section {
   padding: 100px 0;
   -webkit-background-size: auto auto;
@@ -7402,9 +7408,9 @@ h1, h2, h3, h4, h5, h6 {
   .s-quiz--left {
     left: -100px; }
   .s-quiz__img {
-    width: 620px;
-    bottom: 70px;
-    right: -20px; }
+    width: 600px;
+    bottom: 80px;
+    right: -30px; }
   .s-program .program {
     margin-bottom: 150px; }
     .s-program .program--right {
